@@ -596,6 +596,9 @@ tr.colhead_dark td {
     font-size: 14px;
     font-weight: 700;
 }
+.forum_list, .forum_index {
+    font-size: 14px;
+}
 .forum_list h3, .forum_index h3 {
     font-size: 18px;
     text-align: left;
