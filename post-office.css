@@ -46,15 +46,19 @@ table tbody, .main_column, .sidebar, .box, .thin, .pad, #threadpoll, #poll {
 a {
 	text-decoration: none;
 	border: none;
-	color: #fff;
+	color: #f7f7f7;
 	-webkit-transition: color .25s ease-out;
     transition: color .25s ease-out;
 }
-
+a:hover{
+	color: #b39770;
+}
 a img {
 	border: 0;
 }
-
+.forum_index tr td:nth-child(3n) a.tooltip:hover{
+	color: #b39770;
+}
 table tbody a, .main_column a, .sidebar a, .box a {
 	color: #b39770;
 	-webkit-transition: color .25s ease-out;
@@ -62,14 +66,14 @@ table tbody a, .main_column a, .sidebar a, .box a {
 }
 
 table tbody a:hover, .main_column a:hover, .sidebar a:hover, .box a:hover {
-	color: #fff;
+	color: #f7f7f7;
 	-webkit-transition: color .25s ease-out;
     transition: color .25s ease-out;
 }
 
 #header a:hover, .linkbox a:hover {
 	/*text-decoration: underline;*/
-	color:#fff;
+	color:#f7f7f7;
 }
 
 a[onclick]:focus {
@@ -103,7 +107,7 @@ h1, h2, h3 {
 	text-align: center;
 }
 h1 a, h2 a, h3 a{
-	color: #fff;
+	color: #f7f7f7;
 }
 ul#noty_bottomRight_layout_container a {
     color: #b3966f;
@@ -114,7 +118,7 @@ h1 a:hover, h2 a:hover, h3 a:hover {
 
 .box h1, .box h2, .box h3, .box h4
 .box2 h1, .box2 h2, .box2 h3, .box2 h4 {
-	color: #fff;
+	color: #f7f7f7;
 }
 
 .size3, .size4, .size5, .size6, .size7 {
@@ -191,7 +195,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 	font-size: 12px;
 }
 .forum_index tr td:nth-child(3n) a.tooltip {
-    color: #fff;
+    color: #f7f7f7;
 }
 #footer:after {
 	content: url('https://what.cd/static/styles/postmod/images/gazelle.png');
@@ -240,7 +244,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 }
 
 #menu a {
-	color: #FFF;
+	color: #f7f7f7;
 	text-decoration: none;
 }
 
@@ -345,7 +349,7 @@ div#userinfo ul li {
 
 }
 #userinfo_minor li a {
-	color: #FFF;
+	color: #f7f7f7;
 }
 #userinfo_stats li span.stat span.tooltip {
     color: #41a85f;
@@ -369,7 +373,7 @@ li#nav_subscriptions a {
 }
 
 #userinfo a, #alerts a {
-	color: #fff;
+	color: #f7f7f7;
 }
 
 #userinfo b a {
@@ -398,7 +402,7 @@ li#nav_subscriptions a {
 }
 
 #searchbars input:hover{
-	color: #fff;
+	color: #f7f7f7;
 }
 #menu > ul > li > a:hover {
     background: #373737;
@@ -464,7 +468,7 @@ li#nav_subscriptions a {
 	margin: 65px 0px 0px 338px;
 	position: absolute;
 	text-align: center;
-	color: #FFF;
+	color: #f7f7f7;
 }
 
 #cat-selector ul {
@@ -557,20 +561,24 @@ p.min_padding {
 	margin-bottom: 10px;
 	line-height: 1.5;
 }
-
 .box2 {
 	font-size: 10pt;
 	/*background-color: #F7F6F2;*/
 	margin-bottom: 10px;
 }
 tr.colhead_dark td {
-    padding: 13px;
+    padding: 7px 15px;
 }
 .pad h3, .pad h4, .padbox h3, .padbox h4 {
 	margin-top: 0px;
 	padding-top: 0px;
 }
-
+.forum_post .body {
+    padding: 15px 0 15px;
+}
+.box ul.poll {
+    font-size: 12px;
+}
 .sidebar {
 	float: right;
 	width: 245px;
@@ -602,11 +610,13 @@ tr.colhead_dark td {
 }
 
 .group_torrent a{
-	color: #fff;
+	color: #f7f7f7;
 }
-
+.group_torrent a:hover{
+	color: #b39770;
+}
 .tags a:hover {
-	color: #fff;
+	color: #b39770;
 }
 
 .noborder {
@@ -651,12 +661,20 @@ table {
     border-spacing: 0;
 }
 .colhead, .colhead_dark, .head {
-	padding: 13px;
-	background: #353535;
-	/*border-bottom: 1px solid #000;*/
-	color: #FBFCFD;
+    padding: 13px;
+    background: #353535;
+    color: #9a9a9a;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding: 6px 15px;
+    border-color: #1a1a1a;
 }
-
+.colhead, .colhead_dark a, .head a{
+	color: #f7f7f7;
+}
+.colhead, .colhead_dark a:hover, .head a:hover{
+	color: #b39770;
+}
 .colhead a, .colhead_dark a, .head a {
 	color: #FBFCFD;
 }
@@ -867,7 +885,9 @@ table.forum_post td {
 }
 
 table.forum_unread {
-	/*border: 2px solid #EA5600;*/
+	border-top-width: 5px;
+  border-top-style: solid;
+	border-color: #b39770;
 }
 
 td.avatar {
@@ -886,7 +906,7 @@ table.forum_post td.body {
 }
 
 strong.quoteheader{
-	color:#fff;
+	color:#f7f7f7;
 }
 
 blockquote {
@@ -967,7 +987,7 @@ ul .invitetree {
 
 .poll { list-style: none; padding: 10px; margin: 5px; }
 .poll li { clear: both; }
-.poll .graph { padding: 0 0 15px 0; }
+.poll .graph { padding: 0 0 5px 0; }
 .poll .graph span { display: block; height: 19px; float: left; }
 .poll .graph .left_poll { width: 9px; background: url('https://what.cd/static/styles/postmod/images/poll_left.png') top left no-repeat; }
 .poll .graph .center_poll { background: url('https://what.cd/static/styles/postmod/images/poll_middle.png') top left repeat-x; }
@@ -1010,7 +1030,7 @@ input[type="button"], input[type="submit"] {
 	display: inline-block;
 	padding: 3px 6px 4px;
 	margin: 3px;
-	color: #fff;
+	color: #f7f7f7;
 	text-decoration: none;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
@@ -1025,14 +1045,14 @@ input[type="button"], input[type="submit"] {
 
 input[type="button"]:hover, input[type="submit"]:hover {
 	background-color: #1f1f1f;
-	color: #FFF;
+	color: #f7f7f7;
 }
 input[type="button"]:active , input[type="submit"]:active {
 	top: 1px;
 }
 
 input[type="button"]:active, input[type="button"]:focus, input[type="submit"]:active, input[type="submit"]:focus {
-	background: #fff;
+	background: #f7f7f7;
 	display: inline-block;
 	padding: 3px 6px 4px;
 	margin: 3px;
@@ -1051,7 +1071,7 @@ input[type="button"]:active, input[type="button"]:focus, input[type="submit"]:ac
 }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
-	background: #fff;
+	background: #f7f7f7;
 	display: inline-block;
 	padding: 3px;
 	margin: 3px;
@@ -1112,7 +1132,7 @@ option, option:active, option:focus {
 	background: #111;
 	padding: 1px;
 	margin: 0;
-	color: #fff;
+	color: #f7f7f7;
 	text-decoration: none;
 	border: 0;
 	font-family: Lato,Arial,Helvetica,sans-serif;
