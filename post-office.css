@@ -481,7 +481,7 @@ li#nav_subscriptions a {
 }
 
 /* Strip the category column */
-td.cats_col, td.center.cats_col{ border-right: none; }
+td.cats_col, td.center.cats_col{ border-right: none; padding: 0!important; }
 table.grouping>tbody>tr.torrent>td:first-child+td+td,
 table.no_grouping>tbody>tr.torrent>td:first-child+td,
 table.grouping>tbody>tr.group>td:first-child+td+td,
@@ -516,7 +516,7 @@ input.hidden {
 .linkbox {
 	text-align:center;
 	padding: 5px;
-	color: #FCFCFC;
+	color: #9a9a9a;
 }
 
 .center {
@@ -764,7 +764,7 @@ ul.poll li.graph {
 div#ft_container tr {
     background: transparent;
 }
-table#torrent_table td,table#torrent_details tr td,table#discog_table td,table#request_table td,form.search_form td,#requests table.layout td,form.search_form table td {
+table#torrent_table td,table#torrent_details tr td,table#discog_table td,table#request_table td,form.search_form td,#requests table.layout td,form.search_form table td,#top10 table.torrent_table td {
     padding:6px 13px;
 }
 
