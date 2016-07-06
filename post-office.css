@@ -789,6 +789,7 @@ ul.poll li.graph {
 .filter_torrents {
 	width:800px;
 	margin:auto;
+	font-size: 12px;
 }
 
 div#ft_container tr {
