@@ -582,6 +582,26 @@ tr.colhead_dark td {
 .box ul.poll {
     font-size: 12px;
 }
+.forum_list a, .forum_list .colhead {
+    color: #f7f7f7;
+}
+.forum_list a:hover {
+    color: #b39770;
+}
+.forum_list .colhead td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.forum_list .colhead {
+    font-size: 14px;
+    font-weight: 700;
+}
+.forum_list h3 {
+    font-size: 18px;
+    text-align: left;
+		margin-bottom: .25em;
+		margin-top: 20px;
+}
 .sidebar {
 	float: right;
 	width: 245px;
