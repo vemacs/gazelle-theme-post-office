@@ -573,8 +573,11 @@ tr.colhead_dark td {
 	margin-top: 0px;
 	padding-top: 0px;
 }
-.forum_post .body {
+#forums .forum_post .body {
     padding: 15px 0 15px;
+}
+.forum_post .body {
+    padding: 15px;
 }
 .box ul.poll {
     font-size: 12px;
