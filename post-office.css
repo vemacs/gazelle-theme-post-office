@@ -98,9 +98,12 @@ a[onclick^="AddArtistField"]:focus, a[onclick^="AddArtistField"]:active {
 
 h1, h2, h3 {
 	margin: 5px 0px;
-	color: #DFDFDF;
+	color: #919191;
 	font-family: Lato,Arial,Helvetica,sans-serif;
 	text-align: center;
+}
+h1 a, h2 a, h3 a{
+	color: #fff;
 }
 ul#noty_bottomRight_layout_container a {
     color: #b3966f;
@@ -185,7 +188,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 	text-align: center;
 	padding: 1em 0;
 	color: #CCC;
-	font-size: 8pt;
+	font-size: 12px;
 }
 .forum_index tr td:nth-child(3n) a.tooltip {
     color: #fff;
@@ -319,7 +322,7 @@ div#userinfo ul li {
 	position: absolute;
 	color: #9a9a9a;
 	width: 100%;
-	font-size: 8pt;
+	font-size: 12px;
 	text-align: center;
 	padding: 7px 0;
 	font-size: 11px;
@@ -481,7 +484,7 @@ li#nav_subscriptions a {
 }
 
 /* Strip the category column */
-td.cats_col, td.center.cats_col{ border-right: none; padding: 0!important; }
+td.cats_col, td.center.cats_col{ border-right: none; }
 table.grouping>tbody>tr.torrent>td:first-child+td+td,
 table.no_grouping>tbody>tr.torrent>td:first-child+td,
 table.grouping>tbody>tr.group>td:first-child+td+td,
@@ -549,9 +552,10 @@ p.min_padding {
 }
 
 .box {
-	font-size: 13px;
+	font-size: 14px;
 	background-color: #282828;
 	margin-bottom: 10px;
+	line-height: 1.5;
 }
 
 .box2 {
@@ -559,7 +563,9 @@ p.min_padding {
 	/*background-color: #F7F6F2;*/
 	margin-bottom: 10px;
 }
-
+tr.colhead_dark td {
+    padding: 13px;
+}
 .pad h3, .pad h4, .padbox h3, .padbox h4 {
 	margin-top: 0px;
 	padding-top: 0px;
@@ -583,7 +589,7 @@ p.min_padding {
 }
 
 .main_column .box .body {
-	font-size: 8pt;
+	font-size: 13px;
 }
 
 .tags {
@@ -634,10 +640,16 @@ tr.rowb {
 
 td, th {
 	border: none;
-	padding: 13px;
+	padding: 5px;
 	text-align: left;
 }
-
+*, :before, :after {
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 .colhead, .colhead_dark, .head {
 	padding: 13px;
 	background: #353535;
@@ -675,7 +687,7 @@ table.slice {
 }
 
 tr.peer_list {
-	font-size:8pt;
+	font-size:12px;
 }
 
 tr.peer_list td {
@@ -711,7 +723,7 @@ tr.peer_list td {
 
 ul.stats li {
 	padding: 0px 0px 1px 0px;
-	font-size: 8pt;
+	font-size: 12px;
 }
 
 ul.poll li {
@@ -764,10 +776,12 @@ ul.poll li.graph {
 div#ft_container tr {
     background: transparent;
 }
-table#torrent_table td,table#torrent_details tr td,table#discog_table td,table#request_table td,form.search_form td,#requests table.layout td,form.search_form table td,#top10 table.torrent_table td {
-    padding:6px 13px;
+/*table#torrent_table td,table#torrent_details tr td,table#discog_table td,table#request_table td,form.search_form td,#requests table.layout td,form.search_form table td,#top10 table.torrent_table td,#upload form#upload_table td,#artist .torrent_table td,table#dnulist td {
+    padding:5px;
+}*/
+h2 span {
+    color: #9a9a9a;
 }
-
 .filter_torrents .submit {
 	text-align:right;
 	padding-top:5px;
