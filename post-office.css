@@ -1279,3 +1279,4 @@ input[type="search"] {
 .linkbox br{
 	display:none;
 }
+.forum_list h3:nth-child(-n+2), .forum_index h3:nth-child(-n+2),table.forum_post:first-of-type{margin-top:0}
