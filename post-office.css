@@ -173,7 +173,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 	width: 960px;
 	margin: 0 auto 0 auto;
 	color: #DFDFDF;
-	padding: 85px 0;
+	padding: 61px 0;
 	overflow: hidden;
 }
 
@@ -1275,4 +1275,7 @@ input[type="search"] {
 #menu > ul > li > a {
     padding: 10px;
 		font-weight: 700;
+}
+.linkbox br{
+	display:none;
 }
