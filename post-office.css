@@ -1,7 +1,7 @@
 @import https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100;
 @import https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css;
 /*
-Postmodern: A mongrel stylesheet for What.CD, based on 'Zeal', a modification of the original 'Teal' by pellad.
+Postmodern: A mongrel stylesheet for apollo.rip, based on 'Zeal', a modification of the original 'Teal' by pellad.
 This design incorporates some code from the 'Customize Zeal' Greasemonkey script by OhmG. The background image is also sourced from that script.
 */
 
@@ -9,10 +9,10 @@ This design incorporates some code from the 'Customize Zeal' Greasemonkey script
 
 
 /* Global */
-@font-face { font-family: Akzidenz; src: url('https://what.cd/static/styles/postmod/images/Akzidenz.otf'); }
-@font-face { font-family: Officina; src: url('https://what.cd/static/styles/postmod/images/Officina.otf'); }
-@font-face { font-family: Corpid; src: url('https://what.cd/static/styles/postmod/images/CorpidOffice.ttf'); }
-@font-face { font-family: Avant; src: url('https://what.cd/static/styles/postmod/images/Avant.otf'); }
+@font-face { font-family: Akzidenz; src: url('https://apollo.rip/static/styles/postmod/images/Akzidenz.otf'); }
+@font-face { font-family: Officina; src: url('https://apollo.rip/static/styles/postmod/images/Officina.otf'); }
+@font-face { font-family: Corpid; src: url('https://apollo.rip/static/styles/postmod/images/CorpidOffice.ttf'); }
+@font-face { font-family: Avant; src: url('https://apollo.rip/static/styles/postmod/images/Avant.otf'); }
 
 * {
 	padding: 0em;
@@ -164,7 +164,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 #header {
 	width: 100%;
 	margin: 0 auto 0 auto;
-	/*background: url('https://what.cd/static/styles/postmod/images/bg_header.png') 11px 65px no-repeat;*/
+	/*background: url('https://apollo.rip/static/styles/postmod/images/bg_header.png') 11px 65px no-repeat;*/
 	height: 173px;
 	padding: 0 0 0 0;
 }
@@ -178,7 +178,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 }
 
 #alerts {
-	background: transparent url('https://what.cd/static/styles/postmod/images/content.png');
+	background: transparent url('https://apollo.rip/static/styles/postmod/images/content.png');
 	padding: 4px 9px;
 	margin: -19px auto 0 auto;
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -186,7 +186,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 }
 
 #footer {
-	background: transparent url('https://what.cd/static/styles/postmod/images/bg_footer.png');
+	background: transparent url('https://apollo.rip/static/styles/postmod/images/bg_footer.png');
 	margin-top: 40px;
 	width: 100%;
 	text-align: center;
@@ -198,7 +198,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
     color: #f7f7f7;
 }
 #footer:after {
-	content: url('https://what.cd/static/styles/postmod/images/gazelle.png');
+	content: url('https://apollo.rip/static/styles/postmod/images/gazelle.png');
 }
 
 #disclaimer_container {
@@ -410,14 +410,14 @@ li#nav_subscriptions a {
     background: #373737;
 }
 #autocomplete {
-	background: url('https://what.cd/static/styles/postmod/images/content.png');
+	background: url('https://apollo.rip/static/styles/postmod/images/content.png');
 	border: 1px solid #EEE;
 	list-style: none;
 }
 
 #searchbars input:active,
 #searchbars input:focus {
-	/*background: url('https://what.cd/static/styles/postmod/images/content.png');*/
+	/*background: url('https://apollo.rip/static/styles/postmod/images/content.png');*/
 	/*border: 1px solid #EEE;*/
 }
 
@@ -443,7 +443,7 @@ li#nav_subscriptions a {
 	left: 0;
 	z-index: 1000;
 	border: 1px solid #EEE;
-	background: url('https://what.cd/static/styles/postmod/images/content.png');
+	background: url('https://apollo.rip/static/styles/postmod/images/content.png');
 	width: 12em;
 	margin-top: 12px;
 }
@@ -1020,9 +1020,9 @@ ul .invitetree {
 .poll li { clear: both; }
 .poll .graph { padding: 0 0 5px 0; }
 .poll .graph span { display: block; height: 19px; float: left; }
-.poll .graph .left_poll { width: 9px; background: url('https://what.cd/static/styles/postmod/images/poll_left.png') top left no-repeat; }
-.poll .graph .center_poll { background: url('https://what.cd/static/styles/postmod/images/poll_middle.png') top left repeat-x; }
-.poll .graph .right_poll { width: 11px; background: url('https://what.cd/static/styles/postmod/images/poll_right.png') top left no-repeat; }
+.poll .graph .left_poll { width: 9px; background: url('https://apollo.rip/static/styles/postmod/images/poll_left.png') top left no-repeat; }
+.poll .graph .center_poll { background: url('https://apollo.rip/static/styles/postmod/images/poll_middle.png') top left repeat-x; }
+.poll .graph .right_poll { width: 11px; background: url('https://apollo.rip/static/styles/postmod/images/poll_right.png') top left no-repeat; }
 
 .curtain {
 	position: fixed;
