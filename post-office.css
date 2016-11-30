@@ -1057,7 +1057,7 @@ ul .invitetree {
 }
 
 input[type="button"], input[type="submit"] {
-	background: #111 url(images/alert-overlay.png) repeat-x;
+	background: #111 url('https://i.imgur.com/3esLSKv.png') repeat-x;
 	display: inline-block;
 	padding: 3px 6px 4px;
 	margin: 3px;
