@@ -34,10 +34,6 @@ table tbody, .main_column, .sidebar, .box, .thin, .pad, #threadpoll, #poll {
 	color: #999;
 }
 
-#torrents #content .box.pad {
-	background-color: transparent;
-}
-
 /* Common elements */
 
 a {
@@ -892,6 +888,20 @@ tr.torrent td {
 
 .nobr {
 	white-space:nowrap;
+}
+
+#torrents .sign.snatches {
+    height: 15px;
+    width: 15px;
+}
+
+#torrents .sign.seeders, #torrents .sign.leechers {
+    height: 15px;
+    width: 11px;
+}
+
+#torrents #content .box.pad {
+	background-color: transparent;
 }
 
 /* Layout (Forums) */
