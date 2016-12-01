@@ -34,7 +34,7 @@ table tbody, .main_column, .sidebar, .box, .thin, .pad, #threadpoll, #poll {
 	color: #999;
 }
 
-#torrents #content .box .pad {
+#torrents #content .box.pad {
 	background-color: transparent;
 }
 
