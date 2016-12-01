@@ -498,7 +498,7 @@ table.grouping>tbody>tr.colhead>td:first-child+td+td,
 table.no_grouping>tbody>tr.group>td:first-child+td,
 table.no_grouping>tbody>tr.colhead>td:first-child+td { /*text-indent:-20px;*/ border-left: none;}
 
-.last_read {width: 15px; height: 15px; background: url('https://whatimg.com/i/eYWMpa.png') no-repeat center center; margin-left: 5px;background-size: 15px 15px;}
+.last_read {width: 15px; height: 15px; background: url('https://apollo.rip/static/styles/layer_cake/images/go_last_read.png') no-repeat center center; margin-left: 5px;background-size: 15px 15px;}
 .last_read a { border: none; width: 100%; height: 100%; display: block; }
 .last_read a:hover { border: none; }
 .last_read a:active, .last_read a:focus { outline: 0; }
@@ -788,7 +788,7 @@ ul.poll li.graph {
 .show_torrents {
 	width: 28px;
 	height: 28px;
-	background: url('https://whatimg.com/i/XtzEl9.png') no-repeat center center;
+	background: url('https://i.sli.mg/OYStm2.png') no-repeat center center;
 	-moz-opacity: 0.5;
 	opacity:.50;
 	filter: alpha(opacity=50);
@@ -797,7 +797,7 @@ ul.poll li.graph {
 .hide_torrents {
 	width: 28px;
 	height: 28px;
-	background: url('https://whatimg.com/i/6IVz1a.png') no-repeat center center;
+	background: url('https://i.sli.mg/YOzpcc.png') no-repeat center center;
 	-moz-opacity: 0.5;
 	opacity:.50;
 	filter: alpha(opacity=50);
@@ -897,14 +897,14 @@ tr.torrent td {
 
 /* Layout (Forums) */
 
-.unread_locked_sticky{background: url('https://whatimg.com/i/r8srHt.png') no-repeat center center;background-size:16px 16px}
-.read_locked_sticky{background: url('https://whatimg.com/i/c0y7eE.png') no-repeat center center;background-size:16px 16px}
-.read_sticky{background: url('https://whatimg.com/i/0la80a.png') no-repeat center center;background-size:16px 16px}
-.unread_sticky{background: url('https://whatimg.com/i/U1LeO2.png') no-repeat center center;background-size:16px 16px}
-.unread_locked{background: url('https://whatimg.com/i/i4RZtb.png') no-repeat center center;background-size:16px 16px}
-.read_locked{background: url('https://whatimg.com/i/RiMW5L.png') no-repeat center center;background-size:16px 16px}
-.unread{background: url('https://whatimg.com/i/GaAtMV.png') no-repeat center center;background-size:16px 16px}
-.read{background: url('https://whatimg.com/i/3eAgLx.png') no-repeat center center;background-size:16px 16px}
+.unread_locked_sticky{background: url('https://apollo.rip/static/styles/layer_cake/images/locked_sticky_unread.png') no-repeat center center;background-size:16px 16px}
+.read_locked_sticky{background: url('https://apollo.rip/static/styles/layer_cake/images/locked_sticky_read.png') no-repeat center center;background-size:16px 16px}
+.read_sticky{background: url('https://apollo.rip/static/styles/layer_cake/images/sticky_read.png') no-repeat center center;background-size:16px 16px}
+.unread_sticky{background: url('https://apollo.rip/static/styles/layer_cake/images/sticky_unread.png') no-repeat center center;background-size:16px 16px}
+.unread_locked{background: url('https://apollo.rip/static/styles/layer_cake/images/locked_unread.png') no-repeat center center;background-size:16px 16px}
+.read_locked{background: url('https://apollo.rip/static/styles/layer_cake/images/locked_read.png') no-repeat center center;background-size:16px 16px}
+.unread{background: url('https://apollo.rip/static/styles/layer_cake/images/unread.png') no-repeat center center;background-size:16px 16px}
+.read{background: url('https://apollo.rip/static/styles/layer_cake/images/read.png') no-repeat center center;background-size:16px 16px}
 
 table.forum_post {
 	margin: 20px 0px;
