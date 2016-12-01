@@ -892,14 +892,14 @@ tr.torrent td {
 
 /* Layout (Forums) */
 
-.unread_locked_sticky{background: url('https://apollo.rip/static/styles/mono/icons/sticky-unread-locked.png') no-repeat center center;background-size:16px 16px}
-.read_locked_sticky{background: url('https://apollo.rip/static/styles/mono/icons/sticky-read-locked.png') no-repeat center center;background-size:16px 16px}
-.read_sticky{background: url('https://apollo.rip/static/styles/mono/icons/sticky-read.png') no-repeat center center;background-size:16px 16px}
-.unread_sticky{background: url('https://apollo.rip/static/styles/mono/icons/sticky-unread.png') no-repeat center center;background-size:16px 16px}
-.unread_locked{background: url('https://apollo.rip/static/styles/mono/icons/read-locked.png') no-repeat center center;background-size:16px 16px}
-.read_locked{background: url('https://apollo.rip/static/styles/mono/icons/read-locked.png') no-repeat center center;background-size:16px 16px}
-.unread{background: url('https://apollo.rip/static/styles/mono/icons/unread.png') no-repeat center center;background-size:16px 16px}
-.read{background: url('https://apollo.rip/static/styles/mono/icons/read.png') no-repeat center center;background-size:16px 16px}
+.unread_locked_sticky{background: url('https://i.imgur.com/66gbqTU.png') no-repeat center center;background-size:16px 16px}
+.read_locked_sticky{background: url('https://i.imgur.com/QcCEhm4.png') no-repeat center center;background-size:16px 16px}
+.read_sticky{background: url('https://i.imgur.com/rIGNHbL.png') no-repeat center center;background-size:16px 16px}
+.unread_sticky{background: url('https://i.imgur.com/5CHDtKu.png') no-repeat center center;background-size:16px 16px}
+.unread_locked{background: url('https://i.imgur.com/bRaOm5A.png') no-repeat center center;background-size:16px 16px}
+.read_locked{background: url('https://i.imgur.com/CR0WHu9.png') no-repeat center center;background-size:16px 16px}
+.unread{background: url('https://i.imgur.com/xHZY9ef.png') no-repeat center center;background-size:16px 16px}
+.read{background: url('https://i.imgur.com/syFToZe.png') no-repeat center center;background-size:16px 16px}
 
 table.forum_post {
 	margin: 20px 0px;
