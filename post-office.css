@@ -1030,8 +1030,8 @@ ul .invitetree {
 .poll .graph { padding: 0 0 5px 0; }
 .poll .graph span { display: block; height: 19px; float: left; }
 .poll .graph .left_poll { width: 9px; background: url('https://i.imgur.com/u3cdgqt.png') top left no-repeat; background-size: 9px 19px; }
-.poll .graph .center_poll { background: url('https://i.imgur.com/bVukt52.png') top left repeat-x; background-size: 1px 19px; }
-.poll .graph .right_poll { width: 11px; background: url('https://i.imgur.com/V3utcMa.png') top left no-repeat; background-size: 11px 19px; }
+.poll .graph .center_poll { background: url('https://i.imgur.com/CcRSysN.png') top left repeat-x; background-size: 1px 19px; }
+.poll .graph .right_poll { width: 11px; background: url('https://i.imgur.com/R6VbhBX.png') top left no-repeat; background-size: 11px 19px; }
 
 #musicbrainz_popup a {
 	color: #000;
