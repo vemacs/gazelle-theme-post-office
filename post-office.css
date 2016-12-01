@@ -781,7 +781,7 @@ ul.poll li.graph {
 .show_torrents {
 	width: 28px;
 	height: 28px;
-	background: url('https://i.imgur.com/meCW7bi.png') no-repeat center center;
+	background: url('http://i.imgur.com/I5A7Bqt.png') no-repeat center center;
 	-moz-opacity: 0.5;
 	opacity:.50;
 	filter: alpha(opacity=50);
@@ -790,7 +790,7 @@ ul.poll li.graph {
 .hide_torrents {
 	width: 28px;
 	height: 28px;
-	background: url('https://i.imgur.com/63U2cfY.png') no-repeat center center;
+	background: url('https://i.imgur.com/AgXYIkB.png') no-repeat center center;
 	-moz-opacity: 0.5;
 	opacity:.50;
 	filter: alpha(opacity=50);
