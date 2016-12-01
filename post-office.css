@@ -1019,6 +1019,10 @@ ul .invitetree {
 .poll .graph .center_poll { background: url('https://apollo.rip/static/styles/postmod/images/poll_middle.png') top left repeat-x; }
 .poll .graph .right_poll { width: 11px; background: url('https://apollo.rip/static/styles/postmod/images/poll_right.png') top left no-repeat; }
 
+#musicbrainz_popup a {
+	color: #000;
+}
+
 .curtain {
 	position: fixed;
 	top: 0;
