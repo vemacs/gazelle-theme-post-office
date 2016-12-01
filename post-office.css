@@ -890,14 +890,14 @@ tr.torrent td {
 
 /* Layout (Forums) */
 
-.unread_locked_sticky{background: url('https://apollo.rip/static/styles/layer_cake/images/locked_sticky_unread.png') no-repeat center center;background-size:16px 16px}
-.read_locked_sticky{background: url('https://apollo.rip/static/styles/layer_cake/images/locked_sticky_read.png') no-repeat center center;background-size:16px 16px}
-.read_sticky{background: url('https://apollo.rip/static/styles/layer_cake/images/sticky_read.png') no-repeat center center;background-size:16px 16px}
-.unread_sticky{background: url('https://apollo.rip/static/styles/layer_cake/images/sticky_unread.png') no-repeat center center;background-size:16px 16px}
-.unread_locked{background: url('https://apollo.rip/static/styles/layer_cake/images/locked_unread.png') no-repeat center center;background-size:16px 16px}
-.read_locked{background: url('https://apollo.rip/static/styles/layer_cake/images/locked_read.png') no-repeat center center;background-size:16px 16px}
-.unread{background: url('https://apollo.rip/static/styles/layer_cake/images/unread.png') no-repeat center center;background-size:16px 16px}
-.read{background: url('https://apollo.rip/static/styles/layer_cake/images/read.png') no-repeat center center;background-size:16px 16px}
+.unread_locked_sticky{background: url('https://apollo.rip/static/styles/mono/icons/sticky-unread-locked.png') no-repeat center center;background-size:16px 16px}
+.read_locked_sticky{background: url('https://apollo.rip/static/styles/mono/icons/sticky-read-locked.png') no-repeat center center;background-size:16px 16px}
+.read_sticky{background: url('https://apollo.rip/static/styles/mono/icons/sticky-read.png') no-repeat center center;background-size:16px 16px}
+.unread_sticky{background: url('https://apollo.rip/static/styles/mono/icons/sticky-unread.png') no-repeat center center;background-size:16px 16px}
+.unread_locked{background: url('https://apollo.rip/static/styles/mono/icons/read-locked.png') no-repeat center center;background-size:16px 16px}
+.read_locked{background: url('https://apollo.rip/static/styles/mono/icons/read-locked.png') no-repeat center center;background-size:16px 16px}
+.unread{background: url('https://apollo.rip/static/styles/mono/icons/unread.png') no-repeat center center;background-size:16px 16px}
+.read{background: url('https://apollo.rip/static/styles/mono/icons/read.png') no-repeat center center;background-size:16px 16px}
 
 table.forum_post {
 	margin: 20px 0px;
