@@ -1,5 +1,4 @@
-@import https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100;
-@import https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100');
 /*
 Postmodern: A mongrel stylesheet for apollo.rip, based on 'Zeal', a modification of the original 'Teal' by pellad.
 This design incorporates some code from the 'Customize Zeal' Greasemonkey script by OhmG. The background image is also sourced from that script.
