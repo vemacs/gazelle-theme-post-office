@@ -37,6 +37,7 @@ $body-background: #1a1a1a;
 $link-color: #f7f7f7;
 $box-header: #373737;
 $box-contents: #262626;
+$box-textcolor: #9a9a9a;
 
 /* Layout (Torrents page) */
 
@@ -53,7 +54,7 @@ body {
     background: $body-background;
     font-family: $sans-serif-font;
     font-size: 13px;
-    color: #999;
+    color: $box-textcolor;
     background-size: cover;
 }
 
@@ -71,7 +72,7 @@ table tbody,
 .pad,
 #threadpoll,
 #poll {
-    color: #999;
+    color: $box-textcolor;
 }
 
 
@@ -195,7 +196,7 @@ h1,
 h2,
 h3 {
     margin: 5px 0px;
-    color: #919191;
+    color: $box-textcolor;
     font-family: $sans-serif-font;
     text-align: center;
 }
@@ -321,7 +322,7 @@ ul.thin li {
 #content {
     width: 960px;
     margin: 0 auto 0 auto;
-    color: #DFDFDF;
+    color: $link-color;
     padding: 61px 0;
     overflow: hidden;
 }
@@ -494,7 +495,7 @@ div#userinfo ul li {
 
 #userinfo {
     position: absolute;
-    color: #9a9a9a;
+    color: $box-textcolor;
     width: 100%;
     font-size: 12px;
     text-align: center;
@@ -511,7 +512,7 @@ div#userinfo ul li {
 #userinfo_stats a {}
 
 #userinfo_stats li span {
-    color: #9a9a9a;
+    color: $box-textcolor;
 }
 
 #userinfo_minor {}
@@ -563,7 +564,7 @@ li#nav_subscriptions a {
         padding: 3px 5px;
         font-family: $sans-serif-font;
         background: $box-contents;
-        color: #969696;
+        color: $box-textcolor;
         -moz-border-radius: 2px;
         -webkit-border-radius: 3px;
     }
@@ -703,13 +704,13 @@ input.hidden {
 .thin {
     width: 100%;
     margin: 0px auto;
-    color: #DFDFDF;
+    color: $link-color;
 }
 
 .linkbox {
     text-align: center;
     padding: 5px;
-    color: #9a9a9a;
+    color: $box-textcolor;
 }
 
 .center {
@@ -843,7 +844,7 @@ tr.colhead_dark td {
 }
 
 .tags a {
-    color: #9a9a9a;
+    color: $box-textcolor;
 }
 
 .group_torrent a {
@@ -910,7 +911,7 @@ table {
 .head {
     padding: 13px;
     background: $box-header;
-    color: #9a9a9a;
+    color: $box-textcolor;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     padding: 6px 15px;
@@ -1069,7 +1070,7 @@ div#ft_container tr {
     }*/
 
 h2 span {
-    color: #9a9a9a;
+    color: $box-textcolor;
 }
 
 .filter_torrents .submit {
@@ -1110,7 +1111,7 @@ h2 span {
 tr.group_torrent td,
 tr.group td,
 tr.torrent td {
-    color: #969696;
+    color: $box-textcolor;
 }
 
 .torrent_table.grouping tr.torrent,
@@ -1434,7 +1435,7 @@ input[type="submit"]:focus {
     display: inline-block;
     padding: 3px 6px 4px;
     margin: 3px;
-    color: #9a9a9a;
+    color: $box-textcolor;
     text-decoration: none;
     border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1456,7 +1457,7 @@ input[type="search"] {
     display: inline-block;
     padding: 3px;
     margin: 3px;
-    color: #9a9a9a;
+    color: $box-textcolor;
     text-decoration: none;
     border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1485,41 +1486,41 @@ input[type="password"]:active {
 
 input[disabled="disabled"] {
     background: #e0e0e0;
-    color: #9a9a9a;
+    color: $box-textcolor;
 }
 
 input[disabled="disabled"]:hover,
 input[disabled="disabled"]:focus,
 input[disabled="disabled"]:active {
     background-color: #e0e0e0;
-    color: #969696;
+    color: $box-textcolor;
 }
 
 
 /*
-textarea[disabled=disabled] { background: #4F4F4F; color: #DFDFDF; }
-textarea[disabled=disabled]:hover, textarea[disabled=disabled]:focus, textarea[disabled=disabled]:active { background-color: #4F4F4F; color: #DFDFDF; }
+textarea[disabled="disabled"] { background: #444; color: $link-color; }
+textarea[disabled="disabled"]:hover, textarea[disabled="disabled"]:focus, textarea[disabled="disabled"]:active { background-color: #444; color: $link-color; }
 */
 
-select[disabled=disabled] {
-    background: #4F4F4F;
-    color: #DFDFDF;
+select[disabled="disabled"] {
+    background: #444;
+    color: $box-textcolor;
 }
 
-select[disabled=disabled]:hover,
-select[disabled=disabled]:focus,
-select[disabled=disabled]:active {
-    background-color: #4F4F4F;
-    color: #DFDFDF;
+select[disabled="disabled"]:hover,
+select[disabled="disabled"]:focus,
+select[disabled="disabled"]:active {
+    background-color: #444;
+    color: $box-textcolor;
 }
 
 select,
 select:active,
 select:focus {
-    /*background: #111 url(images/alert-overlay.png) repeat-x;*/
+    background: #111 url(#{$button-bg}) repeat-x;
     display: inline-block;
     margin: 3px;
-    color: #333;
+    color: $link-color;
     text-decoration: none;
     border: 0;
     font-family: $sans-serif-font;
@@ -1539,7 +1540,7 @@ option:focus {
 
 select:hover,
 option:hover {
-    background: #3F3F3F;
+    background-color: #444;
 }
 
 #logchecker .thin,
