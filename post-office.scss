@@ -32,6 +32,9 @@ $center-poll: "https://i.imgur.com/G0SlBSb.png";
 $right-poll: "https://i.imgur.com/JVQj8zq.png";
 
 /* Colors */
+$button-bg-base: #111;
+$button-bg-hover: #1f1f1f;
+
 $highlight-color: #b39770;
 $body-background: #1a1a1a;
 $link-color: #f7f7f7;
@@ -1399,7 +1402,7 @@ ul .invitetree {
 
 input[type="button"],
 input[type="submit"] {
-    background: #111 url(#{$button-bg}) repeat-x;
+    background: $button-bg-base url(#{$button-bg}) repeat-x;
     display: inline-block;
     padding: 3px 6px 4px;
     margin: 3px;
@@ -1418,7 +1421,7 @@ input[type="submit"] {
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
-    background-color: #1f1f1f;
+    background-color: $button-bg-hover;
     color: $link-color;
 }
 
@@ -1517,19 +1520,23 @@ select[disabled="disabled"]:active {
 select,
 select:active,
 select:focus {
-    background: #111 url(#{$button-bg}) repeat-x;
+    background: $button-bg-base url(#{$button-bg}) repeat-x;
     display: inline-block;
     margin: 3px;
     color: $link-color;
     text-decoration: none;
     border: 0;
     font-family: $sans-serif-font;
+    padding: 2px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 option,
 option:active,
 option:focus {
-    background: #111;
+    background: $button-bg-hover;
     padding: 1px;
     margin: 0;
     color: $link-color;
@@ -1540,7 +1547,7 @@ option:focus {
 
 select:hover,
 option:hover {
-    background-color: #444;
+    background-color: $button-bg-hover;
 }
 
 #logchecker .thin,
