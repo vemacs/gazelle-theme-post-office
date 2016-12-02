@@ -316,22 +316,22 @@ logo a:focus {
   list-style: none;
   display: inline-block; }
 
-#menu > ul > li {
-  margin: 0 15px; }
-
 #menu ul li {
   float: left;
-  display: block; }
+  display: block;
+  margin: 0 15px; }
 
 #menu ul li a {
   font-family: "Lato", sans-serif;
   font-size: 11pt;
   outline: none;
-  padding: 0 0 2px 0; }
+  padding: 10px;
+  font-weight: 700; }
 
 #menu ul li a:hover {
   border-bottom: 3px solid #EFB34A;
-  text-decoration: none; }
+  text-decoration: none;
+  background: #373737; }
 
 #menu ul li a:active,
 #menu ul li a:focus {
@@ -484,9 +484,6 @@ li#nav_subscriptions a {
           cursor: pointer; }
         #searchbars ul li ul li.highlight {
           color: #4FD1FF; }
-
-#menu > ul > li > a:hover {
-  background: #373737; }
 
 #autocomplete {
   background: url(https://apollo.rip/static/styles/postmod/images/content.png);
@@ -1326,10 +1323,6 @@ div.sidebar #event_div {
 
 input[type="search"] {
   font-size: 13px; }
-
-#menu > ul > li > a {
-  padding: 10px;
-  font-weight: 700; }
 
 .linkbox br {
   display: none; }
