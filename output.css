@@ -349,6 +349,9 @@ logo a:focus {
 #staff #nav_staff a {
   border-bottom: 4px solid #111; }
 
+#collage #content .box.pad {
+  background-color: transparent; }
+
 /*
 #nav_index a { background-position: 0 0; width: 75px; }
 #nav_index a:hover { background-position: 0 -34px; }
