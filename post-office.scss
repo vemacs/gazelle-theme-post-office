@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100);
 
 /*
-Postmodern: A mongrel stylesheet for apollo.rip, based on 'Zeal', a modification of the original 'Teal' by pellad.
-This design incorporates some code from the 'Customize Zeal' Greasemonkey script by OhmG. The background image is also sourced from that script.
+apollo-theme-post-office: A continuation of the original wcd-theme-post-office by dannymichel, 
+with various fixes and updated image resources for apollo.rip.
+Originally forked from Postmodern, which was based on 'Zeal', a modification of the original 'Teal' by pellad.
 */
+
+/* Image resources */
+$postmod-images-directory: "https://apollo.rip/static/styles/postmod/images";
+$sans-serif-font: 'Lato', sans-serif;
 
 
 /* Layout (Torrents page) */
@@ -19,7 +24,7 @@ html {
 
 body {
     background: #1a1a1a;
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: $sans-serif-font;
     font-size: 13px;
     color: #999;
     background-size: cover;
@@ -109,28 +114,28 @@ a[onclick^="AddArtistField"]:active {
 .main_column a[href^="http"],
 .main_column a[href^="https"] {
     padding: 0 10px 0 0;
-    background: url('https://i.imgur.com/Zuw7iO2.png') 100% 4px no-repeat;
+    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat;
     background-size: 8px 8px;
 }
 
 .main_column a[href^="http"]:hover,
 .main_column a[href^="https"]:hover {
     padding: 0 10px 0 0;
-    background: url('https://i.imgur.com/Zuw7iO2.png') 100% 4px no-repeat !important;
+    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat !important;
     background-size: 8px 8px !important;
 }
 
 .forum_post a[href^="http"],
 .forum_post a[href^="https"] {
     padding: 0 10px 0 0;
-    background: url('https://i.imgur.com/Zuw7iO2.png') 100% 4px no-repeat;
+    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat;
     background-size: 8px 8px;
 }
 
 .forum_post a[href^="http"]:hover,
 .forum_post a[href^="https"]:hover {
     padding: 0 10px 0 0;
-    background: url('https://i.imgur.com/Zuw7iO2.png') 100% 4px no-repeat;
+    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat;
     background-size: 8px 8px;
 }
 
@@ -141,7 +146,7 @@ a[onclick^="AddArtistField"]:active {
 .colhead_dark a[href^="http"]:hover,
 .colhead_dark a[href^="https"]:hover {
     padding: 0 10px 0 0;
-    background: url('https://i.imgur.com/Zuw7iO2.png') 100% 4px no-repeat;
+    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat;
     background-size: 8px 8px;
 }
 
@@ -164,7 +169,7 @@ h2,
 h3 {
     margin: 5px 0px;
     color: #919191;
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: $sans-serif-font;
     text-align: center;
 }
 
@@ -199,7 +204,7 @@ h3 a:hover {
 .size5,
 .size6,
 .size7 {
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: $sans-serif-font;
 }
 
 li {
@@ -281,7 +286,7 @@ ul.thin li {
 #header {
     width: 100%;
     margin: 0 auto 0 auto;
-    /*background: url('https://apollo.rip/static/styles/postmod/images/bg_header.png') 11px 65px no-repeat;*/
+    /*background: url(#{$postmod-images-directory}/bg_header.png) 11px 65px no-repeat;*/
     height: 173px;
     padding: 0 0 0 0;
 }
@@ -295,7 +300,7 @@ ul.thin li {
 }
 
 #alerts {
-    background: transparent url('https://apollo.rip/static/styles/postmod/images/content.png');
+    background: transparent url(#{$postmod-images-directory}/content.png);
     padding: 4px 9px;
     margin: -19px auto 0 auto;
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -303,7 +308,7 @@ ul.thin li {
 }
 
 #footer {
-    background: transparent url('https://apollo.rip/static/styles/postmod/images/bg_footer.png');
+    background: transparent url(#{$postmod-images-directory}/bg_footer.png);
     margin-top: 40px;
     width: 100%;
     text-align: center;
@@ -317,7 +322,7 @@ ul.thin li {
 }
 
 #footer:after {
-    content: url('https://apollo.rip/static/styles/postmod/images/gazelle.png');
+    content: url(#{$postmod-images-directory}/gazelle.png);
 }
 
 #disclaimer_container {
@@ -332,7 +337,7 @@ div#wrapper div#content td.label {
 #logo {
     width: 259px;
     height: 62px;
-    background: url('https://i.imgur.com/W1b6om4.png') no-repeat top left;
+    background: url(https://i.imgur.com/W1b6om4.png) no-repeat top left;
     margin-left: -129.5px;
     position: absolute;
     z-index: 2;
@@ -360,7 +365,7 @@ logo a:focus {
 #menu {
     position: absolute;
     padding: 10px 0;
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: $sans-serif-font;
     font-size: 11pt;
     top: 155px;
     background: #262626;
@@ -392,7 +397,7 @@ logo a:focus {
 }
 
 #menu ul li a {
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: $sans-serif-font;
     font-size: 11pt;
     outline: none;
     padding: 0 0 2px 0;
@@ -535,7 +540,7 @@ li#nav_subscriptions a {
     width: 106px;
     border: none;
     padding: 3px 5px;
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: $sans-serif-font;
     background: #262626;
     color: #969696;
     -moz-border-radius: 2px;
@@ -551,14 +556,14 @@ li#nav_subscriptions a {
 }
 
 #autocomplete {
-    background: url('https://apollo.rip/static/styles/postmod/images/content.png');
+    background: url(#{$postmod-images-directory}/content.png);
     border: 1px solid #EEE;
     list-style: none;
 }
 
 #searchbars input:active,
 #searchbars input:focus {
-    /*background: url('https://apollo.rip/static/styles/postmod/images/content.png');*/
+    /*background: url(#{$postmod-images-directory}/content.png);*/
     /*border: 1px solid #EEE;*/
 }
 
@@ -584,7 +589,7 @@ li#nav_subscriptions a {
     left: 0;
     z-index: 1000;
     border: 1px solid #EEE;
-    background: url('https://apollo.rip/static/styles/postmod/images/content.png');
+    background: url(#{$postmod-images-directory}/content.png);
     width: 12em;
     margin-top: 12px;
 }
@@ -651,7 +656,7 @@ table.no_grouping>tbody>tr.colhead>td:first-child+td {
 .last_read {
     width: 15px;
     height: 15px;
-    background: url('https://i.imgur.com/ILascFJ.png') no-repeat center center;
+    background: url(https://i.imgur.com/ILascFJ.png) no-repeat center center;
     margin-left: 5px;
     background-size: 15px 15px;
 }
@@ -1006,7 +1011,7 @@ ul.poll li.graph {
 .show_torrents {
     width: 28px;
     height: 28px;
-    background: url('https://i.imgur.com/qA3ULfm.png') no-repeat center center;
+    background: url(https://i.imgur.com/qA3ULfm.png) no-repeat center center;
     background-size: 14px auto;
     -moz-opacity: 0.5;
     opacity: .50;
@@ -1016,7 +1021,7 @@ ul.poll li.graph {
 .hide_torrents {
     width: 28px;
     height: 28px;
-    background: url('https://i.imgur.com/WzEcqP8.png') no-repeat center center;
+    background: url(https://i.imgur.com/WzEcqP8.png) no-repeat center center;
     background-size: 14px auto;
     -moz-opacity: 0.5;
     opacity: .50;
@@ -1144,42 +1149,42 @@ tr.torrent td {
 /* Layout (Forums) */
 
 .unread_locked_sticky {
-    background: url('https://i.imgur.com/66gbqTU.png') no-repeat center center;
+    background: url(https://i.imgur.com/66gbqTU.png) no-repeat center center;
     background-size: 25px 25px
 }
 
 .read_locked_sticky {
-    background: url('https://i.imgur.com/QcCEhm4.png') no-repeat center center;
+    background: url(https://i.imgur.com/QcCEhm4.png) no-repeat center center;
     background-size: 25px 25px
 }
 
 .read_sticky {
-    background: url('https://i.imgur.com/rIGNHbL.png') no-repeat center center;
+    background: url(https://i.imgur.com/rIGNHbL.png) no-repeat center center;
     background-size: 25px 25px
 }
 
 .unread_sticky {
-    background: url('https://i.imgur.com/5CHDtKu.png') no-repeat center center;
+    background: url(https://i.imgur.com/5CHDtKu.png) no-repeat center center;
     background-size: 25px 25px
 }
 
 .unread_locked {
-    background: url('https://i.imgur.com/bRaOm5A.png') no-repeat center center;
+    background: url(https://i.imgur.com/bRaOm5A.png) no-repeat center center;
     background-size: 25px 25px
 }
 
 .read_locked {
-    background: url('https://i.imgur.com/CR0WHu9.png') no-repeat center center;
+    background: url(https://i.imgur.com/CR0WHu9.png) no-repeat center center;
     background-size: 25px 25px
 }
 
 .unread {
-    background: url('https://i.imgur.com/xHZY9ef.png') no-repeat center center;
+    background: url(https://i.imgur.com/xHZY9ef.png) no-repeat center center;
     background-size: 25px 25px
 }
 
 .read {
-    background: url('https://i.imgur.com/syFToZe.png') no-repeat center center;
+    background: url(https://i.imgur.com/syFToZe.png) no-repeat center center;
     background-size: 25px 25px
 }
 
@@ -1330,18 +1335,18 @@ ul .invitetree {
 
 .poll .graph .left_poll {
     width: 9px;
-    background: url('https://i.imgur.com/G30gZo5.png') top left no-repeat;
+    background: url(https://i.imgur.com/G30gZo5.png) top left no-repeat;
     background-size: 9px 19px;
 }
 
 .poll .graph .center_poll {
-    background: url('https://i.imgur.com/G0SlBSb.png') top left repeat-x;
+    background: url(https://i.imgur.com/G0SlBSb.png) top left repeat-x;
     background-size: 1px 19px;
 }
 
 .poll .graph .right_poll {
     width: 11px;
-    background: url('https://i.imgur.com/JVQj8zq.png') top left no-repeat;
+    background: url(https://i.imgur.com/JVQj8zq.png) top left no-repeat;
     background-size: 11px 19px;
 }
 
@@ -1383,7 +1388,7 @@ ul .invitetree {
 
 input[type="button"],
 input[type="submit"] {
-    background: #111 url('https://i.imgur.com/3esLSKv.png') repeat-x;
+    background: #111 url(https://i.imgur.com/3esLSKv.png) repeat-x;
     display: inline-block;
     padding: 3px 6px 4px;
     margin: 3px;
@@ -1507,7 +1512,7 @@ select:focus {
     color: #333;
     text-decoration: none;
     border: 0;
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: $sans-serif-font;
 }
 
 option,
@@ -1519,7 +1524,7 @@ option:focus {
     color: #f7f7f7;
     text-decoration: none;
     border: 0;
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: $sans-serif-font;
 }
 
 select:hover,
