@@ -581,7 +581,7 @@ p.min_padding {
 
 .box {
   font-size: 14px;
-  background-color: #282828;
+  background-color: #262626;
   margin-bottom: 10px;
   line-height: 1.5; }
 
@@ -715,7 +715,7 @@ table {
 .colhead_dark,
 .head {
   padding: 13px;
-  background: #353535;
+  background: #373737;
   color: #9a9a9a;
   border-bottom-width: 2px;
   border-bottom-style: solid;
@@ -863,7 +863,7 @@ h2 span {
   background-color: #222; }
 
 .torrent_table tr.group_torrent {
-  background-color: #282828;
+  background-color: #262626;
   border-bottom: 1px solid #1f1f1f;
   font-size: 11px; }
 
@@ -977,7 +977,7 @@ blockquote {
   margin: 10px;
   padding: 10px;
   border: 1px dashed #666;
-  background: #353535; }
+  background: #373737; }
 
 /* Layout (Inbox) */
 tr.unreadpm {
