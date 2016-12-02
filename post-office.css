@@ -1163,7 +1163,7 @@ select[disabled=disabled] { background: #4F4F4F; color: #DFDFDF; }
 select[disabled=disabled]:hover, select[disabled=disabled]:focus, select[disabled=disabled]:active { background-color: #4F4F4F; color: #DFDFDF; }
 
 select, select:active, select:focus {
-	/*background: #111 /*url(images/alert-overlay.png)*/ repeat-x;*/
+	/*background: #111 url(images/alert-overlay.png)/ repeat-x;*/
 	display: inline-block;
 	margin: 3px;
 	color: #333;
