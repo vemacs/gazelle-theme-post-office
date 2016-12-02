@@ -34,6 +34,7 @@ $right-poll: "https://i.imgur.com/JVQj8zq.png";
 /* Colors */
 $button-bg-base: #111;
 $button-bg-hover: #1f1f1f;
+$button-bg-pressed: #080808;
 
 $highlight-color: #b39770;
 $body-background: #1a1a1a;
@@ -1402,6 +1403,7 @@ input[type="submit"] {
     border-right: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 input[type="button"]:hover,
@@ -1414,9 +1416,9 @@ input[type="button"]:active,
 input[type="button"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 3px rgba(0,0,0,0.25);
+	background-color: $button-bg-pressed;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0,0,0,0.15);
     outline: 0;
-    top: 1px;
 }
 
 input[type="text"],
