@@ -305,37 +305,31 @@ logo a:focus {
   left: 0;
   box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.25);
   text-align: center; }
-
-#menu a {
-  color: #f7f7f7;
-  text-decoration: none; }
-
-#menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block; }
-
-#menu ul li {
-  float: left;
-  display: block;
-  margin: 0 15px; }
-
-#menu ul li a {
-  font-family: "Lato", sans-serif;
-  font-size: 11pt;
-  outline: none;
-  padding: 10px;
-  font-weight: 700; }
-
-#menu ul li a:hover {
-  border-bottom: 3px solid #EFB34A;
-  text-decoration: none;
-  background: #373737; }
-
-#menu ul li a:active,
-#menu ul li a:focus {
-  border-bottom: 3px solid #EFA82C; }
+  #menu a {
+    color: #f7f7f7;
+    text-decoration: none; }
+  #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block; }
+    #menu ul li {
+      float: left;
+      display: block;
+      margin: 0 15px; }
+      #menu ul li a {
+        font-family: "Lato", sans-serif;
+        font-size: 11pt;
+        outline: none;
+        padding: 10px;
+        font-weight: 700; }
+      #menu ul li a:hover {
+        border-bottom: 3px solid #EFB34A;
+        text-decoration: none;
+        background: #373737; }
+      #menu ul li a:active,
+      #menu ul li a:focus {
+        border-bottom: 3px solid #EFA82C; }
 
 #index #nav_index a,
 #torrents #nav_torrents a,
