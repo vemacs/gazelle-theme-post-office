@@ -1388,70 +1388,48 @@ ul .invitetree {
     z-index: -1;
 }
 
-input[type="button"],
-input[type="submit"] {
-    background: $button-bg-base url(#{$button-bg}) repeat-x;
-    display: inline-block;
-    padding: 3px 6px 4px;
-    margin: 3px;
-    color: $link-color;
-    text-decoration: none;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition: background-color 0.2s, box-shadow 0.2s;
-}
-
-input[type="button"]:hover,
-input[type="submit"]:hover {
-    background-color: $button-bg-hover;
-    color: $link-color;
-}
-
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-	background-color: $button-bg-pressed;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0,0,0,0.15);
-    outline: 0;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="search"] {
-    background: $link-color;
-    display: inline-block;
-    padding: 3px;
-    margin: 3px;
-    color: $box-textcolor;
-    text-decoration: none;
-    border-radius: 2px;
-    border: none;
-}
-
-input[type="text"]:hover,
-input[type="text"]:focus,
-input[type="email"]:hover,
-input[type="email"]:focus,
-input[type="search"]:hover,
-input[type="search"]:focus,
-input[type="password"]:hover,
-input[type="password"]:focus {
-    /*background-color: #000;*/
-    color: #333;
-}
-
-input[type="text"]:active,
-input[type="email"]:active,
-input[type="search"]:active,
-input[type="password"]:active {
-    top: 1px;
+input {
+	&[type="button"], &[type="submit"] {
+	    background: $button-bg-base url(#{$button-bg}) repeat-x;
+	    display: inline-block;
+	    padding: 3px 6px 4px;
+	    margin: 3px;
+	    color: $link-color;
+	    text-decoration: none;
+	    border-radius: 2px;
+	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	    border-left: 0;
+	    border-top: 0;
+	    border-right: 0;
+	    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	    cursor: pointer;
+	    transition: background-color 0.2s, box-shadow 0.2s;
+	    &:hover {
+    		background-color: $button-bg-hover;
+    		color: $link-color;
+	    }
+	    &:active, &:focus {
+			background-color: $button-bg-pressed;
+		    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0,0,0,0.15);
+		    outline: 0;
+	    }
+	}
+	&[type="text"],
+	&[type="email"],
+	&[type="password"],
+	&[type="search"] {
+	    background: $link-color;
+	    display: inline-block;
+	    padding: 3px;
+	    margin: 3px;
+	    color: $box-textcolor;
+	    text-decoration: none;
+	    border-radius: 2px;
+	    border: none;
+	    &:hover, &:focus {
+    		color: #333;
+	    }
+    }
 }
 
 input[disabled="disabled"] {
