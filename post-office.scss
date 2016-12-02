@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100);
+$sans-serif-font: 'Lato', sans-serif;
 
 /*
 apollo-theme-post-office: A continuation of the original wcd-theme-post-office by dannymichel, 
@@ -8,7 +9,31 @@ Originally forked from Postmodern, which was based on 'Zeal', a modification of 
 
 /* Image resources */
 $postmod-images-directory: "https://apollo.rip/static/styles/postmod/images";
-$sans-serif-font: 'Lato', sans-serif;
+$logo: "https://i.imgur.com/W1b6om4.png";
+
+$external-link: "https://i.imgur.com/Zuw7iO2.png";
+$button-bg: "https://i.imgur.com/3esLSKv.png";
+
+$show-torrents: "https://i.imgur.com/qA3ULfm.png";
+$hide-torrents: "https://i.imgur.com/WzEcqP8.png";
+
+$last-read: "https://i.imgur.com/ILascFJ.png";
+$unread-locked-sticky: "https://i.imgur.com/66gbqTU.png";
+$read-locked-sticky: "https://i.imgur.com/QcCEhm4.png";
+$unread-sticky: "https://i.imgur.com/5CHDtKu.png";
+$read-sticky: "https://i.imgur.com/rIGNHbL.png";
+$unread-locked: "https://i.imgur.com/bRaOm5A.png";
+$read-locked: "https://i.imgur.com/CR0WHu9.png";
+$unread: "https://i.imgur.com/xHZY9ef.png";
+$read: "https://i.imgur.com/syFToZe.png";
+
+$left-poll: "https://i.imgur.com/G30gZo5.png";
+$center-poll: "https://i.imgur.com/G0SlBSb.png";
+$right-poll: "https://i.imgur.com/JVQj8zq.png";
+
+/* Colors */
+$highlight-color: #b39770;
+$body-background: #1a1a1a;
 
 
 /* Layout (Torrents page) */
@@ -23,7 +48,7 @@ html {
 }
 
 body {
-    background: #1a1a1a;
+    background: $body-background;
     font-family: $sans-serif-font;
     font-size: 13px;
     color: #999;
@@ -59,7 +84,7 @@ a {
 }
 
 a:hover {
-    color: #b39770;
+    color: $highlight-color;
 }
 
 a img {
@@ -67,14 +92,14 @@ a img {
 }
 
 .forum_index tr td:nth-child(3n) a.tooltip:hover {
-    color: #b39770;
+    color: $highlight-color;
 }
 
 table tbody a,
 .main_column a,
 .sidebar a,
 .box a {
-    color: #b39770;
+    color: $highlight-color;
     -webkit-transition: color .25s ease-out;
     transition: color .25s ease-out;
 }
@@ -114,28 +139,28 @@ a[onclick^="AddArtistField"]:active {
 .main_column a[href^="http"],
 .main_column a[href^="https"] {
     padding: 0 10px 0 0;
-    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat;
+    background: url(#{$external-link}) 100% 4px no-repeat;
     background-size: 8px 8px;
 }
 
 .main_column a[href^="http"]:hover,
 .main_column a[href^="https"]:hover {
     padding: 0 10px 0 0;
-    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat !important;
+    background: url(#{$external-link}) 100% 4px no-repeat !important;
     background-size: 8px 8px !important;
 }
 
 .forum_post a[href^="http"],
 .forum_post a[href^="https"] {
     padding: 0 10px 0 0;
-    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat;
+    background: url(#{$external-link}) 100% 4px no-repeat;
     background-size: 8px 8px;
 }
 
 .forum_post a[href^="http"]:hover,
 .forum_post a[href^="https"]:hover {
     padding: 0 10px 0 0;
-    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat;
+    background: url(#{$external-link}) 100% 4px no-repeat;
     background-size: 8px 8px;
 }
 
@@ -146,7 +171,7 @@ a[onclick^="AddArtistField"]:active {
 .colhead_dark a[href^="http"]:hover,
 .colhead_dark a[href^="https"]:hover {
     padding: 0 10px 0 0;
-    background: url(https://i.imgur.com/Zuw7iO2.png) 100% 4px no-repeat;
+    background: url(#{$external-link}) 100% 4px no-repeat;
     background-size: 8px 8px;
 }
 
@@ -337,7 +362,7 @@ div#wrapper div#content td.label {
 #logo {
     width: 259px;
     height: 62px;
-    background: url(https://i.imgur.com/W1b6om4.png) no-repeat top left;
+    background: url(#{$logo}) no-repeat top left;
     margin-left: -129.5px;
     position: absolute;
     z-index: 2;
@@ -502,7 +527,7 @@ div#userinfo ul li {
 }
 
 li#nav_subscriptions a {
-    color: #b39770;
+    color: $highlight-color;
 }
 
 #userinfo img {
@@ -534,21 +559,62 @@ li#nav_subscriptions a {
     background: #373737;
     left: 0;
     text-align: center;
-}
-
-#searchbars input {
-    width: 106px;
-    border: none;
-    padding: 3px 5px;
-    font-family: $sans-serif-font;
-    background: #262626;
-    color: #969696;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 3px;
-}
-
-#searchbars input:hover {
-    color: #f7f7f7;
+    input {
+        width: 106px;
+        border: none;
+        padding: 3px 5px;
+        font-family: $sans-serif-font;
+        background: #262626;
+        color: #969696;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 3px;
+    }
+    input:hover {
+        color: #f7f7f7;
+    }
+    input:active,
+    input:focus {
+        /*background: url(#{$postmod-images-directory}/content.png);*/
+        /*border: 1px solid #EEE;*/
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+        li {
+            display: inline;
+            float: left;
+            margin: 0;
+            position: relative;
+            list-style: none;
+            form {
+                display: inline;
+                margin: 0;
+            }
+            ul {
+                display: block;
+                position: absolute;
+                top: 1em;
+                left: 0;
+                z-index: 1000;
+                border: 1px solid #EEE;
+                background: url(#{$postmod-images-directory}/content.png);
+                width: 12em;
+                margin-top: 12px;
+                li {
+                    margin: 1px 0 1px 4px;
+                    padding: 0;
+                    display: block;
+                    width: 100%;
+                    cursor: pointer;
+                }
+                li.highlight {
+                    color: #4FD1FF;
+                }
+            }
+        }
+    }
 }
 
 #menu > ul > li > a:hover {
@@ -559,56 +625,6 @@ li#nav_subscriptions a {
     background: url(#{$postmod-images-directory}/content.png);
     border: 1px solid #EEE;
     list-style: none;
-}
-
-#searchbars input:active,
-#searchbars input:focus {
-    /*background: url(#{$postmod-images-directory}/content.png);*/
-    /*border: 1px solid #EEE;*/
-}
-
-#searchbars ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
-}
-
-#searchbars ul li {
-    display: inline;
-    float: left;
-    margin: 0;
-    position: relative;
-    list-style: none;
-}
-
-#searchbars ul li ul {
-    display: block;
-    position: absolute;
-    top: 1em;
-    left: 0;
-    z-index: 1000;
-    border: 1px solid #EEE;
-    background: url(#{$postmod-images-directory}/content.png);
-    width: 12em;
-    margin-top: 12px;
-}
-
-#searchbars ul li ul li {
-    margin: 1px 0 1px 4px;
-    padding: 0;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-}
-
-#searchbars ul li ul li.highlight {
-    color: #4FD1FF;
-}
-
-#searchbars ul li form {
-    display: inline;
-    margin: 0;
 }
 
 #alerts {
@@ -656,7 +672,7 @@ table.no_grouping>tbody>tr.colhead>td:first-child+td {
 .last_read {
     width: 15px;
     height: 15px;
-    background: url(https://i.imgur.com/ILascFJ.png) no-repeat center center;
+    background: url(#{$last-read}) no-repeat center center;
     margin-left: 5px;
     background-size: 15px 15px;
 }
@@ -778,7 +794,7 @@ tr.colhead_dark td {
 
 .forum_list a:hover,
 .forum_index a:hover {
-    color: #b39770;
+    color: $highlight-color;
 }
 
 .forum_list .colhead td,
@@ -841,11 +857,11 @@ tr.colhead_dark td {
 }
 
 .group_torrent a:hover {
-    color: #b39770;
+    color: $highlight-color;
 }
 
 .tags a:hover {
-    color: #b39770;
+    color: $highlight-color;
 }
 
 .noborder {
@@ -904,7 +920,7 @@ table {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     padding: 6px 15px;
-    border-color: #1a1a1a;
+    border-color: $body-background;
 }
 
 .colhead,
@@ -916,7 +932,7 @@ table {
 .colhead,
 .colhead_dark a:hover,
 .head a:hover {
-    color: #b39770;
+    color: $highlight-color;
 }
 
 .colhead a,
@@ -1011,7 +1027,7 @@ ul.poll li.graph {
 .show_torrents {
     width: 28px;
     height: 28px;
-    background: url(https://i.imgur.com/qA3ULfm.png) no-repeat center center;
+    background: url(#{$show-torrents}) no-repeat center center;
     background-size: 14px auto;
     -moz-opacity: 0.5;
     opacity: .50;
@@ -1021,7 +1037,7 @@ ul.poll li.graph {
 .hide_torrents {
     width: 28px;
     height: 28px;
-    background: url(https://i.imgur.com/WzEcqP8.png) no-repeat center center;
+    background: url(#{$hide-torrents}) no-repeat center center;
     background-size: 14px auto;
     -moz-opacity: 0.5;
     opacity: .50;
@@ -1130,61 +1146,61 @@ tr.torrent td {
     white-space: nowrap;
 }
 
-#torrents .sign.snatches {
-    height: 15px;
-    width: 15px;
-}
-
-#torrents .sign.seeders,
-#torrents .sign.leechers {
-    height: 15px;
-    width: 11px;
-}
-
-#torrents #content .box.pad {
-    background-color: transparent;
+#torrents {
+    .sign.snatches > a > img {
+        width: 15px;
+        height: 15px;
+    }
+    .sign.seeders > a > img,
+    .sign.leechers > a > img {
+        width: 11px;
+        height: 15px;
+    }
+    #content .box.pad {
+        background-color: transparent;
+    }
 }
 
 
 /* Layout (Forums) */
 
 .unread_locked_sticky {
-    background: url(https://i.imgur.com/66gbqTU.png) no-repeat center center;
+    background: url(#{$unread-locked-sticky}) no-repeat center center;
     background-size: 25px 25px
 }
 
 .read_locked_sticky {
-    background: url(https://i.imgur.com/QcCEhm4.png) no-repeat center center;
-    background-size: 25px 25px
-}
-
-.read_sticky {
-    background: url(https://i.imgur.com/rIGNHbL.png) no-repeat center center;
+    background: url(#{$read-locked-sticky}) no-repeat center center;
     background-size: 25px 25px
 }
 
 .unread_sticky {
-    background: url(https://i.imgur.com/5CHDtKu.png) no-repeat center center;
+    background: url(#{$unread-sticky}) no-repeat center center;
+    background-size: 25px 25px
+}
+
+.read_sticky {
+    background: url(#{$read-sticky}) no-repeat center center;
     background-size: 25px 25px
 }
 
 .unread_locked {
-    background: url(https://i.imgur.com/bRaOm5A.png) no-repeat center center;
+    background: url(#{$unread-locked}) no-repeat center center;
     background-size: 25px 25px
 }
 
 .read_locked {
-    background: url(https://i.imgur.com/CR0WHu9.png) no-repeat center center;
+    background: url(#{$read-locked}) no-repeat center center;
     background-size: 25px 25px
 }
 
 .unread {
-    background: url(https://i.imgur.com/xHZY9ef.png) no-repeat center center;
+    background: url(#{$unread}) no-repeat center center;
     background-size: 25px 25px
 }
 
 .read {
-    background: url(https://i.imgur.com/syFToZe.png) no-repeat center center;
+    background: url(#{$read}) no-repeat center center;
     background-size: 25px 25px
 }
 
@@ -1199,7 +1215,7 @@ table.forum_post td {
 table.forum_unread {
     border-top-width: 5px;
     border-top-style: solid;
-    border-color: #b39770;
+    border-color: $highlight-color;
 }
 
 td.avatar {
@@ -1335,18 +1351,18 @@ ul .invitetree {
 
 .poll .graph .left_poll {
     width: 9px;
-    background: url(https://i.imgur.com/G30gZo5.png) top left no-repeat;
+    background: url(#{$left-poll}) top left no-repeat;
     background-size: 9px 19px;
 }
 
 .poll .graph .center_poll {
-    background: url(https://i.imgur.com/G0SlBSb.png) top left repeat-x;
+    background: url(#{$center-poll}) top left repeat-x;
     background-size: 1px 19px;
 }
 
 .poll .graph .right_poll {
     width: 11px;
-    background: url(https://i.imgur.com/JVQj8zq.png) top left no-repeat;
+    background: url(#{$right-poll}) top left no-repeat;
     background-size: 11px 19px;
 }
 
@@ -1388,7 +1404,7 @@ ul .invitetree {
 
 input[type="button"],
 input[type="submit"] {
-    background: #111 url(https://i.imgur.com/3esLSKv.png) repeat-x;
+    background: #111 url(#{$button-bg}) repeat-x;
     display: inline-block;
     padding: 3px 6px 4px;
     margin: 3px;

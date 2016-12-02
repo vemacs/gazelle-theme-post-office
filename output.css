@@ -5,6 +5,7 @@ with various fixes and updated image resources for apollo.rip.
 Originally forked from Postmodern, which was based on 'Zeal', a modification of the original 'Teal' by pellad.
 */
 /* Image resources */
+/* Colors */
 /* Layout (Torrents page) */
 * {
   padding: 0em;
@@ -433,19 +434,53 @@ li#nav_subscriptions a {
   background: #373737;
   left: 0;
   text-align: center; }
-
-#searchbars input {
-  width: 106px;
-  border: none;
-  padding: 3px 5px;
-  font-family: "Lato", sans-serif;
-  background: #262626;
-  color: #969696;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 3px; }
-
-#searchbars input:hover {
-  color: #f7f7f7; }
+  #searchbars input {
+    width: 106px;
+    border: none;
+    padding: 3px 5px;
+    font-family: "Lato", sans-serif;
+    background: #262626;
+    color: #969696;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 3px; }
+  #searchbars input:hover {
+    color: #f7f7f7; }
+  #searchbars input:active,
+  #searchbars input:focus {
+    /*background: url(https://apollo.rip/static/styles/postmod/images/content.png);*/
+    /*border: 1px solid #EEE;*/ }
+  #searchbars ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block; }
+    #searchbars ul li {
+      display: inline;
+      float: left;
+      margin: 0;
+      position: relative;
+      list-style: none; }
+      #searchbars ul li form {
+        display: inline;
+        margin: 0; }
+      #searchbars ul li ul {
+        display: block;
+        position: absolute;
+        top: 1em;
+        left: 0;
+        z-index: 1000;
+        border: 1px solid #EEE;
+        background: url(https://apollo.rip/static/styles/postmod/images/content.png);
+        width: 12em;
+        margin-top: 12px; }
+        #searchbars ul li ul li {
+          margin: 1px 0 1px 4px;
+          padding: 0;
+          display: block;
+          width: 100%;
+          cursor: pointer; }
+        #searchbars ul li ul li.highlight {
+          color: #4FD1FF; }
 
 #menu > ul > li > a:hover {
   background: #373737; }
@@ -454,49 +489,6 @@ li#nav_subscriptions a {
   background: url(https://apollo.rip/static/styles/postmod/images/content.png);
   border: 1px solid #EEE;
   list-style: none; }
-
-#searchbars input:active,
-#searchbars input:focus {
-  /*background: url(https://apollo.rip/static/styles/postmod/images/content.png);*/
-  /*border: 1px solid #EEE;*/ }
-
-#searchbars ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block; }
-
-#searchbars ul li {
-  display: inline;
-  float: left;
-  margin: 0;
-  position: relative;
-  list-style: none; }
-
-#searchbars ul li ul {
-  display: block;
-  position: absolute;
-  top: 1em;
-  left: 0;
-  z-index: 1000;
-  border: 1px solid #EEE;
-  background: url(https://apollo.rip/static/styles/postmod/images/content.png);
-  width: 12em;
-  margin-top: 12px; }
-
-#searchbars ul li ul li {
-  margin: 1px 0 1px 4px;
-  padding: 0;
-  display: block;
-  width: 100%;
-  cursor: pointer; }
-
-#searchbars ul li ul li.highlight {
-  color: #4FD1FF; }
-
-#searchbars ul li form {
-  display: inline;
-  margin: 0; }
 
 #alerts {
   width: 230px;
@@ -913,14 +905,14 @@ tr.torrent td {
 .nobr {
   white-space: nowrap; }
 
-#torrents .sign.snatches {
-  height: 15px;
-  width: 15px; }
+#torrents .sign.snatches > a > img {
+  width: 15px;
+  height: 15px; }
 
-#torrents .sign.seeders,
-#torrents .sign.leechers {
-  height: 15px;
-  width: 11px; }
+#torrents .sign.seeders > a > img,
+#torrents .sign.leechers > a > img {
+  width: 11px;
+  height: 15px; }
 
 #torrents #content .box.pad {
   background-color: transparent; }
@@ -934,12 +926,12 @@ tr.torrent td {
   background: url(https://i.imgur.com/QcCEhm4.png) no-repeat center center;
   background-size: 25px 25px; }
 
-.read_sticky {
-  background: url(https://i.imgur.com/rIGNHbL.png) no-repeat center center;
-  background-size: 25px 25px; }
-
 .unread_sticky {
   background: url(https://i.imgur.com/5CHDtKu.png) no-repeat center center;
+  background-size: 25px 25px; }
+
+.read_sticky {
+  background: url(https://i.imgur.com/rIGNHbL.png) no-repeat center center;
   background-size: 25px 25px; }
 
 .unread_locked {
