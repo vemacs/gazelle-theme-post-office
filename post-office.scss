@@ -34,7 +34,7 @@ $right-poll: "https://i.imgur.com/JVQj8zq.png";
 /* Colors */
 $highlight-color: #b39770;
 $body-background: #1a1a1a;
-
+$link-color: #f7f7f7;
 
 /* Layout (Torrents page) */
 
@@ -78,7 +78,7 @@ table tbody,
 a {
     text-decoration: none;
     border: none;
-    color: #f7f7f7;
+    color: $link-color;
     -webkit-transition: color .25s ease-out;
     transition: color .25s ease-out;
 }
@@ -108,7 +108,7 @@ table tbody a:hover,
 .main_column a:hover,
 .sidebar a:hover,
 .box a:hover {
-    color: #f7f7f7;
+    color: $link-color;
     -webkit-transition: color .25s ease-out;
     transition: color .25s ease-out;
 }
@@ -116,7 +116,7 @@ table tbody a:hover,
 #header a:hover,
 .linkbox a:hover {
     /*text-decoration: underline;*/
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 a[onclick]:focus {
@@ -201,7 +201,7 @@ h3 {
 h1 a,
 h2 a,
 h3 a {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 ul#noty_bottomRight_layout_container a {
@@ -221,7 +221,7 @@ h3 a:hover {
 .box2 h2,
 .box2 h3,
 .box2 h4 {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 .size3,
@@ -343,7 +343,7 @@ ul.thin li {
 }
 
 .forum_index tr td:nth-child(3n) a.tooltip {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 #footer:after {
@@ -399,7 +399,7 @@ logo a:focus {
     box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, .25);
     text-align: center;
     a {
-        color: #f7f7f7;
+        color: $link-color;
         text-decoration: none;
     }
     ul {
@@ -515,7 +515,7 @@ div#userinfo ul li {
 #userinfo_minor {}
 
 #userinfo_minor li a {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 #userinfo_stats li span.stat span.tooltip {
@@ -540,7 +540,7 @@ li#nav_subscriptions a {
 
 #userinfo a,
 #alerts a {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 #userinfo b a {
@@ -566,7 +566,7 @@ li#nav_subscriptions a {
         -webkit-border-radius: 3px;
     }
     input:hover {
-        color: #f7f7f7;
+        color: $link-color;
     }
     input:active,
     input:focus {
@@ -624,7 +624,7 @@ li#nav_subscriptions a {
     margin: 65px 0px 0px 338px;
     position: absolute;
     text-align: center;
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 #cat-selector ul {
@@ -781,7 +781,7 @@ tr.colhead_dark td {
 .forum_list .colhead,
 .forum_index a,
 .forum_index .colhead {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 .forum_list a:hover,
@@ -845,7 +845,7 @@ tr.colhead_dark td {
 }
 
 .group_torrent a {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 .group_torrent a:hover {
@@ -918,7 +918,7 @@ table {
 .colhead,
 .colhead_dark a,
 .head a {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 .colhead,
@@ -1230,7 +1230,7 @@ table.forum_post td.body {
 }
 
 strong.quoteheader {
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 blockquote {
@@ -1400,7 +1400,7 @@ input[type="submit"] {
     display: inline-block;
     padding: 3px 6px 4px;
     margin: 3px;
-    color: #f7f7f7;
+    color: $link-color;
     text-decoration: none;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -1416,7 +1416,7 @@ input[type="submit"] {
 input[type="button"]:hover,
 input[type="submit"]:hover {
     background-color: #1f1f1f;
-    color: #f7f7f7;
+    color: $link-color;
 }
 
 input[type="button"]:active,
@@ -1428,7 +1428,7 @@ input[type="button"]:active,
 input[type="button"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-    background: #f7f7f7;
+    background: $link-color;
     display: inline-block;
     padding: 3px 6px 4px;
     margin: 3px;
@@ -1450,7 +1450,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="search"] {
-    background: #f7f7f7;
+    background: $link-color;
     display: inline-block;
     padding: 3px;
     margin: 3px;
@@ -1529,7 +1529,7 @@ option:focus {
     background: #111;
     padding: 1px;
     margin: 0;
-    color: #f7f7f7;
+    color: $link-color;
     text-decoration: none;
     border: 0;
     font-family: $sans-serif-font;
