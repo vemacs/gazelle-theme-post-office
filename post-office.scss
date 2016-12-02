@@ -1431,7 +1431,7 @@ input[type="search"] {
     margin: 3px;
     color: $box-textcolor;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 2px;
     border: none;
 }
 
@@ -1484,9 +1484,7 @@ select[disabled="disabled"]:active {
     color: $box-textcolor;
 }
 
-select,
-select:active,
-select:focus {
+select {
     background: $button-bg-base url(#{$button-bg}) repeat-x;
     display: inline-block;
     margin: 3px;
@@ -1498,6 +1496,12 @@ select:focus {
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s, box-shadow 0.2s;
+    &:active, &:focus {
+	  	background-color: $button-bg-pressed;
+	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0,0,0,0.15);
+	    outline: 0;  	
+    }
 }
 
 option,

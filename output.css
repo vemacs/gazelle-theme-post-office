@@ -1124,7 +1124,7 @@ input[type="search"] {
   margin: 3px;
   color: #9a9a9a;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 2px;
   border: none; }
 
 input[type="text"]:hover,
@@ -1168,9 +1168,7 @@ select[disabled="disabled"]:active {
   background-color: #444;
   color: #9a9a9a; }
 
-select,
-select:active,
-select:focus {
+select {
   background: #111 url(https://i.imgur.com/3esLSKv.png) repeat-x;
   display: inline-block;
   margin: 3px;
@@ -1181,7 +1179,12 @@ select:focus {
   padding: 2px;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s, box-shadow 0.2s; }
+  select:active, select:focus {
+    background-color: #080808;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0, 0, 0, 0.15);
+    outline: 0; }
 
 option,
 option:active,
