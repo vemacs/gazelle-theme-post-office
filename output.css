@@ -266,18 +266,13 @@ div#wrapper div#content td.label {
   background-size: 259px 62px;
   left: 50%;
   top: 66px; }
+  #logo a {
+    border: none;
+    width: 259px;
+    height: 62px;
+    display: block; }
 
-#logo a {
-  border: none;
-  width: 259px;
-  height: 62px;
-  display: block; }
-
-#header a:active,
-#header a:focus,
-#logo a:hover,
-#logo a:active,
-logo a:focus {
+#logo a:active, #logo a:focus, #header a:active, #header a:focus {
   border: none;
   outline: none; }
 
