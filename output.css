@@ -138,27 +138,19 @@ h3 {
   color: #9a9a9a;
   font-family: "Lato", sans-serif;
   text-align: center; }
-
-h1 a,
-h2 a,
-h3 a {
-  color: #f7f7f7; }
+  h1 a,
+  h2 a,
+  h3 a {
+    color: #f7f7f7; }
+    h1 a:hover,
+    h2 a:hover,
+    h3 a:hover {
+      text-decoration: underline; }
 
 ul#noty_bottomRight_layout_container a {
   color: #b3966f; }
 
-h1 a:hover,
-h2 a:hover,
-h3 a:hover {
-  text-decoration: underline; }
-
-.box h1,
-.box h2,
-.box h3,
-.box h4 .box2 h1,
-.box2 h2,
-.box2 h3,
-.box2 h4 {
+.box h1, .box h2, .box h3, .box h4, .box2 h1, .box2 h2, .box2 h3, .box2 h4 {
   color: #f7f7f7; }
 
 .size3,
@@ -214,10 +206,9 @@ span.size10 {
 ul.thin {
   margin: 0px 0px 0px 25px;
   padding: 0px; }
-
-ul.thin li {
-  margin: 0px 0px;
-  padding: 0px; }
+  ul.thin li {
+    margin: 0px 0px;
+    padding: 0px; }
 
 /* Layout (Every page) */
 #wrapper {
@@ -1119,30 +1110,20 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
   input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus, input[type="password"]:hover, input[type="password"]:focus, input[type="search"]:hover, input[type="search"]:focus {
     color: #333; }
 
+input[type="search"] {
+  font-size: 13px; }
+
 input[disabled="disabled"] {
   background: #e0e0e0;
   color: #9a9a9a; }
-
-input[disabled="disabled"]:hover,
-input[disabled="disabled"]:focus,
-input[disabled="disabled"]:active {
-  background-color: #e0e0e0;
-  color: #9a9a9a; }
+  input[disabled="disabled"]:hover, input[disabled="disabled"]:focus, input[disabled="disabled"]:active {
+    background-color: #e0e0e0;
+    color: #9a9a9a; }
 
 /*
 textarea[disabled="disabled"] { background: #444; color: $link-color; }
 textarea[disabled="disabled"]:hover, textarea[disabled="disabled"]:focus, textarea[disabled="disabled"]:active { background-color: #444; color: $link-color; }
 */
-select[disabled="disabled"] {
-  background: #444;
-  color: #9a9a9a; }
-
-select[disabled="disabled"]:hover,
-select[disabled="disabled"]:focus,
-select[disabled="disabled"]:active {
-  background-color: #444;
-  color: #9a9a9a; }
-
 select {
   background: #111 url(https://i.imgur.com/3esLSKv.png) repeat-x;
   display: inline-block;
@@ -1160,6 +1141,9 @@ select {
     background-color: #080808;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0, 0, 0, 0.15);
     outline: 0; }
+  select[disabled="disabled"] {
+    background: #444;
+    color: #9a9a9a; }
 
 option,
 option:active,
@@ -1263,9 +1247,6 @@ div.sidebar #event_div {
 
 #reportsv2 .manage_form img {
   max-width: 622px; }
-
-input[type="search"] {
-  font-size: 13px; }
 
 .linkbox br {
   display: none; }
