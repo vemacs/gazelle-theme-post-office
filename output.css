@@ -874,12 +874,12 @@ tr.torrent td {
 .nobr {
   white-space: nowrap; }
 
-#torrents .sign.snatches > a > img {
+#torrents .sign.snatches img {
   width: 15px;
   height: 15px; }
 
-#torrents .sign.seeders > a > img,
-#torrents .sign.leechers > a > img {
+#torrents .sign.seeders img,
+#torrents .sign.leechers img {
   width: 11px;
   height: 15px; }
 

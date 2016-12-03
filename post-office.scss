@@ -1112,12 +1112,12 @@ tr.torrent td {
 }
 
 #torrents {
-    .sign.snatches > a > img {
+    .sign.snatches img {
         width: 15px;
         height: 15px;
     }
-    .sign.seeders > a > img,
-    .sign.leechers > a > img {
+    .sign.seeders img,
+    .sign.leechers img {
         width: 11px;
         height: 15px;
     }
