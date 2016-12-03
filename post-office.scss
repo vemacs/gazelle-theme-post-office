@@ -1437,6 +1437,9 @@ select {
     }
     &[disabled="disabled"] {
 	    color: $box-textcolor;
+	    &:hover, &:active, &:focus {
+		    background: $button-bg-base;
+	    }
 	}
 }
 

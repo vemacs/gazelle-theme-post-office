@@ -1128,6 +1128,8 @@ select {
     outline: 0; }
   select[disabled="disabled"] {
     color: #9a9a9a; }
+    select[disabled="disabled"]:hover, select[disabled="disabled"]:active, select[disabled="disabled"]:focus {
+      background: #373737; }
 
 option,
 option:active,
