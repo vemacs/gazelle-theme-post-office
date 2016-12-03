@@ -1113,13 +1113,10 @@ input[disabled="disabled"] {
     color: #5d5d5d;
     background: #373737; }
 
-#upload input[type="text"] {
-  padding: 9px; }
-
 textarea {
   background: #373737;
   display: inline-block;
-  padding: 9px;
+  padding: 8px;
   margin: 3px;
   color: #9a9a9a;
   font-family: "Lato", sans-serif;
@@ -1155,7 +1152,7 @@ select {
   text-decoration: none;
   border: 0;
   font-family: "Lato", sans-serif;
-  padding: 8px;
+  padding: 7px;
   transition: background-color 0.2s; }
   select:hover {
     background-color: #444; }

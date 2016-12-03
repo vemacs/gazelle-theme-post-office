@@ -1422,14 +1422,10 @@ input {
 	}
 }
 
-#upload input[type="text"] {
-	padding: 9px;
-}
-
 textarea {
     background: $button-bg-base;
     display: inline-block;
-    padding: 9px;
+    padding: 8px;
     margin: 3px;
     color: $box-textcolor;
     font-family: $sans-serif-font;
@@ -1472,7 +1468,7 @@ select {
     text-decoration: none;
     border: 0;
     font-family: $sans-serif-font;
-    padding: 8px;
+    padding: 7px;
     transition: background-color 0.2s;
     &:hover {
     	background-color: $button-bg-hover;
