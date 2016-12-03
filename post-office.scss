@@ -42,6 +42,7 @@ $link-color: #f7f7f7;
 $box-header: #373737;
 $box-contents: #262626;
 $box-textcolor: #9a9a9a;
+$textbox-highlight: #5d5d5d;
 
 /* Layout (Torrents page) */
 
@@ -539,6 +540,7 @@ li#nav_subscriptions a {
         background: $box-contents;
         color: $box-textcolor;
         border-radius: 2px;
+        box-shadow: none !important;
     }
     input:hover {
         color: $link-color;
@@ -1363,6 +1365,7 @@ ul .invitetree {
     z-index: -1;
 }
 
+
 input {
 	&[type="button"], &[type="submit"] {
 	    background: $button-bg-base;
@@ -1388,27 +1391,33 @@ input {
 	&[type="email"],
 	&[type="password"],
 	&[type="search"] {
-	    background: $link-color;
+	    background: $button-bg-base;
 	    display: inline-block;
-	    padding: 3px;
+	    padding: 8px;
 	    margin: 3px;
 	    color: $box-textcolor;
+	    font-family: $sans-serif-font;
 	    text-decoration: none;
 	    border: none;
-	    &:hover, &:focus {
-    		color: #333;
+	    box-shadow: inset 0px -1px 0px $textbox-highlight;
+	    transition: all 0.2s;
+	    &:hover {
+    		color: $link-color;
+	    }
+	    &:focus {
+	    	color: $box-textcolor;
+		    box-shadow: inset 0px -1px 0px $highlight-color;
+		    outline: 0;
 	    }
     }
     &[type="search"] {
 	    font-size: 13px;
 	}
     &[disabled="disabled"] {
-	    background: #e0e0e0;
-	    color: $box-textcolor;
-	 	&:hover, &:focus, &:active {
-		    background-color: #e0e0e0;
-		    color: $box-textcolor;
-	 	}   
+	    color: $textbox-highlight;
+	    &:hover, &:active, &:focus {
+		    background: $button-bg-base;
+	    }
 	}
 }
 
@@ -1436,7 +1445,7 @@ select {
 	    outline: 0;
     }
     &[disabled="disabled"] {
-	    color: $box-textcolor;
+	    color: $textbox-highlight;
 	    &:hover, &:active, &:focus {
 		    background: $button-bg-base;
 	    }

@@ -417,7 +417,8 @@ li#nav_subscriptions a {
     font-family: "Lato", sans-serif;
     background: #262626;
     color: #9a9a9a;
-    border-radius: 2px; }
+    border-radius: 2px;
+    box-shadow: none !important; }
   #searchbars input:hover {
     color: #f7f7f7; }
   #searchbars input:active,
@@ -1086,25 +1087,30 @@ input[type="button"], input[type="submit"] {
     outline: 0; }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
-  background: #f7f7f7;
+  background: #373737;
   display: inline-block;
-  padding: 3px;
+  padding: 8px;
   margin: 3px;
   color: #9a9a9a;
+  font-family: "Lato", sans-serif;
   text-decoration: none;
-  border: none; }
-  input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus, input[type="password"]:hover, input[type="password"]:focus, input[type="search"]:hover, input[type="search"]:focus {
-    color: #333; }
+  border: none;
+  box-shadow: inset 0px -1px 0px #5d5d5d;
+  transition: all 0.2s; }
+  input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover, input[type="search"]:hover {
+    color: #f7f7f7; }
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="search"]:focus {
+    color: #9a9a9a;
+    box-shadow: inset 0px -1px 0px #b39770;
+    outline: 0; }
 
 input[type="search"] {
   font-size: 13px; }
 
 input[disabled="disabled"] {
-  background: #e0e0e0;
-  color: #9a9a9a; }
-  input[disabled="disabled"]:hover, input[disabled="disabled"]:focus, input[disabled="disabled"]:active {
-    background-color: #e0e0e0;
-    color: #9a9a9a; }
+  color: #5d5d5d; }
+  input[disabled="disabled"]:hover, input[disabled="disabled"]:active, input[disabled="disabled"]:focus {
+    background: #373737; }
 
 /*
 textarea[disabled="disabled"] { background: #444; color: $link-color; }
@@ -1127,7 +1133,7 @@ select {
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     outline: 0; }
   select[disabled="disabled"] {
-    color: #9a9a9a; }
+    color: #5d5d5d; }
     select[disabled="disabled"]:hover, select[disabled="disabled"]:active, select[disabled="disabled"]:focus {
       background: #373737; }
 
