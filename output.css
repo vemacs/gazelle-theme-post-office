@@ -1134,6 +1134,10 @@ textarea {
       color: #5d5d5d;
       background: #373737; }
 
+table.forum_post input[type="button"] {
+  padding: 3px;
+  margin: 1px; }
+
 /*
 textarea[disabled="disabled"] { background: #444; color: $link-color; }
 textarea[disabled="disabled"]:hover, textarea[disabled="disabled"]:focus, textarea[disabled="disabled"]:active { background-color: #444; color: $link-color; }
