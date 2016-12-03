@@ -1082,7 +1082,7 @@ input[type="button"], input[type="submit"] {
     background-color: #444; }
   input[type="button"]:active, input[type="button"]:focus, input[type="submit"]:active, input[type="submit"]:focus {
     background-color: #333;
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     outline: 0; }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
@@ -1092,7 +1092,6 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
   margin: 3px;
   color: #9a9a9a;
   text-decoration: none;
-  border-radius: 2px;
   border: none; }
   input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus, input[type="password"]:hover, input[type="password"]:focus, input[type="search"]:hover, input[type="search"]:focus {
     color: #333; }
@@ -1112,24 +1111,22 @@ textarea[disabled="disabled"] { background: #444; color: $link-color; }
 textarea[disabled="disabled"]:hover, textarea[disabled="disabled"]:focus, textarea[disabled="disabled"]:active { background-color: #444; color: $link-color; }
 */
 select {
-  background: #373737 url(https://i.imgur.com/3esLSKv.png) repeat-x;
+  background: #373737;
   display: inline-block;
   margin: 3px;
   color: #f7f7f7;
   text-decoration: none;
   border: 0;
   font-family: "Lato", sans-serif;
-  padding: 2px;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  transition: background-color 0.2s, box-shadow 0.2s; }
+  padding: 8px;
+  transition: background-color 0.2s; }
+  select:hover {
+    background-color: #444; }
   select:active, select:focus {
     background-color: #333;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     outline: 0; }
   select[disabled="disabled"] {
-    background: #444;
     color: #9a9a9a; }
 
 option,
@@ -1143,7 +1140,6 @@ option:focus {
   border: 0;
   font-family: "Lato", sans-serif; }
 
-select:hover,
 option:hover {
   background-color: #444; }
 

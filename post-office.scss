@@ -1380,7 +1380,7 @@ input {
 	    }
 	    &:active, &:focus {
 			background-color: $button-bg-pressed;
-		    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.25);
+		    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15);
 		    outline: 0;
 	    }
 	}
@@ -1394,7 +1394,6 @@ input {
 	    margin: 3px;
 	    color: $box-textcolor;
 	    text-decoration: none;
-	    border-radius: 2px;
 	    border: none;
 	    &:hover, &:focus {
     		color: #333;
@@ -1419,25 +1418,24 @@ textarea[disabled="disabled"]:hover, textarea[disabled="disabled"]:focus, textar
 */
 
 select {
-    background: $button-bg-base url(#{$button-bg}) repeat-x;
+    background: $button-bg-base;
     display: inline-block;
     margin: 3px;
     color: $link-color;
     text-decoration: none;
     border: 0;
     font-family: $sans-serif-font;
-    padding: 2px;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    transition: background-color 0.2s, box-shadow 0.2s;
+    padding: 8px;
+    transition: background-color 0.2s;
+    &:hover {
+    	background-color: $button-bg-hover;
+    }
     &:active, &:focus {
-	  	background-color: $button-bg-pressed;
-	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0,0,0,0.15);
-	    outline: 0;  	
+		background-color: $button-bg-pressed;
+	    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15);
+	    outline: 0;
     }
     &[disabled="disabled"] {
-	    background: #444;
 	    color: $box-textcolor;
 	}
 }
@@ -1454,7 +1452,6 @@ option:focus {
     font-family: $sans-serif-font;
 }
 
-select:hover,
 option:hover {
     background-color: $button-bg-hover;
 }
