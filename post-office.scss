@@ -32,9 +32,9 @@ $center-poll: "https://i.imgur.com/G0SlBSb.png";
 $right-poll: "https://i.imgur.com/JVQj8zq.png";
 
 /* Colors */
-$button-bg-base: #111;
-$button-bg-hover: #1f1f1f;
-$button-bg-pressed: #080808;
+$button-bg-base: #5a5a5a;
+$button-bg-hover: #676767;
+$button-bg-pressed: #4d4d4d;
 
 $highlight-color: #b39770;
 $body-background: #1a1a1a;
@@ -1365,28 +1365,20 @@ ul .invitetree {
 
 input {
 	&[type="button"], &[type="submit"] {
-	    background: $button-bg-base url(#{$button-bg}) repeat-x;
+	    background: $button-bg-base;
 	    display: inline-block;
 	    padding: 3px 6px 4px;
 	    margin: 3px;
 	    color: $link-color;
+	    font-family: $sans-serif-font;
 	    text-decoration: none;
-	    border-radius: 2px;
-	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-	    border-left: 0;
-	    border-top: 0;
-	    border-right: 0;
-	    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 	    cursor: pointer;
-	    transition: background-color 0.2s, box-shadow 0.2s;
+	    transition: background-color 0.2s;
 	    &:hover {
     		background-color: $button-bg-hover;
-    		color: $link-color;
 	    }
 	    &:active, &:focus {
 			background-color: $button-bg-pressed;
-		    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(0,0,0,0.15);
-		    outline: 0;
 	    }
 	}
 	&[type="text"],
