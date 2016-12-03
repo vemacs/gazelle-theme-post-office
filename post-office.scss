@@ -1405,7 +1405,7 @@ input {
     		color: $link-color;
 	    }
 	    &:focus {
-	    	color: $box-textcolor;
+			color: $link-color;
 		    box-shadow: inset 0px -1px 0px $highlight-color;
 		    outline: 0;
 	    }
@@ -1416,6 +1416,33 @@ input {
     &[disabled="disabled"] {
 	    color: $textbox-highlight;
 	    &:hover, &:active, &:focus {
+		    color: $textbox-highlight;
+		    background: $button-bg-base;
+	    }
+	}
+}
+
+textarea {
+    background: $button-bg-base;
+    display: inline-block;
+    padding: 8px;
+    margin: 3px;
+    color: $box-textcolor;
+    font-family: $sans-serif-font;
+    text-decoration: none;
+    border: none;
+    transition: all 0.2s;
+    &:hover {
+		color: $link-color;
+    }
+    &:focus {
+		color: $link-color;
+	    outline: 0;
+    }
+    &[disabled="disabled"] {
+	    color: $textbox-highlight;
+	    &:hover, &:active, &:focus {
+		    color: $textbox-highlight;
 		    background: $button-bg-base;
 	    }
 	}

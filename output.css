@@ -1100,7 +1100,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
   input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover, input[type="search"]:hover {
     color: #f7f7f7; }
   input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="search"]:focus {
-    color: #9a9a9a;
+    color: #f7f7f7;
     box-shadow: inset 0px -1px 0px #b39770;
     outline: 0; }
 
@@ -1110,7 +1110,29 @@ input[type="search"] {
 input[disabled="disabled"] {
   color: #5d5d5d; }
   input[disabled="disabled"]:hover, input[disabled="disabled"]:active, input[disabled="disabled"]:focus {
+    color: #5d5d5d;
     background: #373737; }
+
+textarea {
+  background: #373737;
+  display: inline-block;
+  padding: 8px;
+  margin: 3px;
+  color: #9a9a9a;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s; }
+  textarea:hover {
+    color: #f7f7f7; }
+  textarea:focus {
+    color: #f7f7f7;
+    outline: 0; }
+  textarea[disabled="disabled"] {
+    color: #5d5d5d; }
+    textarea[disabled="disabled"]:hover, textarea[disabled="disabled"]:active, textarea[disabled="disabled"]:focus {
+      color: #5d5d5d;
+      background: #373737; }
 
 /*
 textarea[disabled="disabled"] { background: #444; color: $link-color; }
