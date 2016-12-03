@@ -424,10 +424,6 @@ div#wrapper div#content td.label {
     border-bottom: 4px solid #111;
 }
 
-#collage #content .box.pad {
-    background-color: transparent;
-}
-
 /*
 #nav_index a { background-position: 0 0; width: 75px; }
 #nav_index a:hover { background-position: 0 -34px; }
@@ -1111,16 +1107,18 @@ tr.torrent td {
     white-space: nowrap;
 }
 
-#torrents {
-    .sign.snatches img {
-        width: 15px;
-        height: 15px;
-    }
-    .sign.seeders img,
-    .sign.leechers img {
-        width: 11px;
-        height: 15px;
-    }
+.sign.snatches img {
+    width: 15px;
+    height: 15px;
+}
+
+.sign.seeders img,
+.sign.leechers img {
+    width: 11px;
+    height: 15px;
+}
+
+#torrents, #collage {
     #content .box.pad {
         background-color: transparent;
     }
