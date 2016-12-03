@@ -1393,7 +1393,7 @@ input {
 	&[type="search"] {
 	    background: $button-bg-base;
 	    display: inline-block;
-	    padding: 9px;
+	    padding: 8px;
 	    margin: 3px;
 	    color: $box-textcolor;
 	    font-family: $sans-serif-font;
@@ -1422,6 +1422,10 @@ input {
 	}
 }
 
+#upload input[type="text"] {
+	padding: 9px;
+}
+
 textarea {
     background: $button-bg-base;
     display: inline-block;
@@ -1431,12 +1435,14 @@ textarea {
     font-family: $sans-serif-font;
     text-decoration: none;
     border: none;
+    box-shadow: inset 0px -1px 0px $textbox-highlight;
     transition: all 0.2s;
     &:hover {
 		color: $link-color;
     }
     &:focus {
 		color: $link-color;
+	    box-shadow: inset 0px -1px 0px $highlight-color;
 	    outline: 0;
     }
     &[disabled="disabled"] {
