@@ -1126,6 +1126,11 @@ input[disabled="disabled"] {
     color: #5d5d5d;
     background: #373737; }
 
+input[type="checkbox"], input[type="radio"] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px; }
+
 textarea {
   background: #373737;
   display: inline-block;

@@ -1435,6 +1435,11 @@ input {
 		    background: $button-bg-base;
 	    }
 	}
+	&[type="checkbox"], &[type="radio"] {
+	  vertical-align: middle;
+	  position: relative;
+	  bottom: 1px;
+	}
 }
 
 textarea {
