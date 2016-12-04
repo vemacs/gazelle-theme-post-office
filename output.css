@@ -564,6 +564,9 @@ p.min_padding {
   margin-bottom: 10px;
   line-height: 1.5; }
 
+ul.stats.nobullet {
+  padding-bottom: 4px; }
+
 .box2 {
   font-size: 10pt;
   /*background-color: #F7F6F2;*/
