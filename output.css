@@ -66,6 +66,9 @@ table tbody a:hover,
   color: #f7f7f7;
   transition: color .25s ease-out; }
 
+#content table:not(.forum_post) td, #content table:not(.forum_post) th {
+  padding: 5px; }
+
 #header a:hover,
 .linkbox a:hover {
   /*text-decoration: underline;*/
@@ -1218,6 +1221,15 @@ tr.torrent .bookmark > a:after {
 #requests .forum_post textarea {
   /* overriding the inline 80-character monospace */
   max-width: 409px; }
+
+#requests td:nth-child(1) {
+  width: 101px; }
+
+#requests label {
+  display: inline-block;
+  min-width: 75px;
+  font-size: 12px;
+  padding: 4px; }
 
 .linkbox .brackets:before,
 .linkbox .brackets:after,
