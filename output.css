@@ -1194,9 +1194,6 @@ option:focus {
   border: 0;
   font-family: "Lato", sans-serif; }
 
-option:hover {
-  background-color: #444; }
-
 #logchecker .thin,
 #logchecker h3,
 .log_outer,
