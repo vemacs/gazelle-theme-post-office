@@ -1205,7 +1205,7 @@ table.forum_post td.body {
     line-height: 1.5;
 }
 
-#reply_box > h3 {
+#reply_box > h3, #inbox #content > .thin > h3 {
     background: $box-header;
     color: $box-textcolor;
     border-bottom-width: 2px;

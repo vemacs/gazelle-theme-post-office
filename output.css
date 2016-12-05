@@ -945,7 +945,7 @@ table.forum_post td.body {
   width: 690px;
   line-height: 1.5; }
 
-#reply_box > h3 {
+#reply_box > h3, #inbox #content > .thin > h3 {
   background: #373737;
   color: #9a9a9a;
   border-bottom-width: 2px;
