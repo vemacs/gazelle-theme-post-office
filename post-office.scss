@@ -727,6 +727,10 @@ p.min_padding {
     line-height: 1.5;
 }
 
+#torrents #content #reply_box > .box.pad {
+    background-color: $box-contents;
+}
+
 ul.stats.nobullet {
 	padding-bottom: 4px;
 }

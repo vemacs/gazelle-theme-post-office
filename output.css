@@ -567,6 +567,9 @@ p.min_padding {
   margin-bottom: 10px;
   line-height: 1.5; }
 
+#torrents #content #reply_box > .box.pad {
+  background-color: #262626; }
+
 ul.stats.nobullet {
   padding-bottom: 4px; }
 
