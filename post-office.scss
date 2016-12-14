@@ -8,8 +8,8 @@ Originally forked from Postmodern, which was based on 'Zeal', a modification of 
 */
 
 /* Image resources */
-$postmod-images-directory: "https://apollo.rip/static/styles/postmod/images";
-$logo: "https://i.imgur.com/W1b6om4.png";
+$postmod-images-directory: "https://passtheheadphones.me/static/styles/postmod/images";
+$logo: "https://i.imgur.com/vavo1tv.png";
 
 $external-link: "https://i.imgur.com/Zuw7iO2.png";
 $button-bg: "https://i.imgur.com/3esLSKv.png";
@@ -348,18 +348,18 @@ div#wrapper div#content td.label {
 }
 
 #logo {
-    width: 259px;
+    width: 489px;
     height: 62px;
     background: url(#{$logo}) no-repeat top left;
-    margin-left: -129.5px;
+    margin-left: -244.5px;
     position: absolute;
     z-index: 2;
-    background-size: 259px 62px;
+    background-size: 489px 62px;
     left: 50%;
     top: 66px;
     a {
 	    border: none;
-	    width: 259px;
+	    width: 489px;
 	    height: 62px;
 	    display: block;
 	}
